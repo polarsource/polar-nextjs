@@ -10,7 +10,7 @@ Create a Checkout handler which takes care of redirections.
 
 ```typescript
 // /api/checkout/+server.ts
-import { Checkout } from "polar-sveltekit";
+import { Checkout } from "@polar-sh/sveltekit";
 
 export const GET = Checkout({
   accessToken: process.env.POLAR_ACCESS_TOKEN,
@@ -54,7 +54,7 @@ A simple utility which resolves incoming webhook payloads by signing the webhook
 
 ```typescript
 // api/webhook/polar/route.ts
-import { Webhooks } from "polar-sveltekit";
+import { Webhooks } from "@polar-sh/sveltekit";
 
 export const POST = Webhooks({
   webhookSecret: process.env.POLAR_WEBHOOK_SECRET!,
