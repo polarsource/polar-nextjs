@@ -1,7 +1,7 @@
 {
 	"name": "polar-nextjs",
-	"version": "0.1.5",
- 	"main": "dist/index.js",
+	"version": "0.1.6",
+	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
@@ -13,7 +13,9 @@
 		"dev": "tsc --watch",
 		"check": "biome check --write ./src"
 	},
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"dependencies": {
 		"@polar-sh/sdk": "^0.20.0"
 	},
@@ -27,7 +29,9 @@
 			"ts": "module",
 			"tsx": "module"
 		},
-		"nodeArguments": ["--loader=ts-node/esm"]
+		"nodeArguments": [
+			"--loader=ts-node/esm"
+		]
 	},
 	"peerDependencies": {
 		"next": "^15.0.0"
