@@ -28,7 +28,6 @@ Pass query params to this route.
 - customerEmail (optional) `?productId=xxx&customerEmail=janedoe@gmail.com`
 - customerName (optional) `?productId=xxx&customerName=Jane`
 
-
 ## Customer Portal
 
 Create a customer portal where your customer can view orders and subscriptions.
@@ -38,8 +37,8 @@ Create a customer portal where your customer can view orders and subscriptions.
 import { CustomerPortal } from "@polar-sh/sveltekit";
 
 export const GET = CustomerPortal({
-	accessToken: process.env.POLAR_ACCESS_TOKEN,
-	server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
+  accessToken: process.env.POLAR_ACCESS_TOKEN,
+  server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
 });
 ```
 
