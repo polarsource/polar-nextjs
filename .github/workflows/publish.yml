@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -16,14 +18,18 @@ jobs:
       id-token: write
     steps:
     - uses: actions/checkout@v4
+    
     - name: Install pnpm
       uses: pnpm/action-setup@v4
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
+    
     - run: pnpm install --frozen-lockfile
+
     - name: Publish to NPM
       id: changesets
       uses: changesets/action@v1
