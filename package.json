@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check": "turbo check",
     "ci": "turbo check && turbo build",
-    "publish-packages": "turbo run lint check build && changeset version && changeset publish"
+    "publish-packages": "turbo run lint check build && changeset publish"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
