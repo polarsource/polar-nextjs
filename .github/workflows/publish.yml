@@ -13,9 +13,6 @@ jobs:
     strategy:
       matrix:
         node-version: [20]
-    permissions:
-      contents: read
-      id-token: write
     steps:
     - uses: actions/checkout@v4
     
