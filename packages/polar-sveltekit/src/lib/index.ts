@@ -102,10 +102,9 @@ export const CustomerPortal = ({
     const customerId = await getCustomerId(event);
 
     if (!customerId) {
-      return new Response(
-        JSON.stringify({ error: "customerId not defined" }),
-        { status: 400 },
-      );
+      return new Response(JSON.stringify({ error: "customerId not defined" }), {
+        status: 400,
+      });
     }
 
     try {
