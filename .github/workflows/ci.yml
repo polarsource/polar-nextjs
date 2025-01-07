@@ -18,5 +18,7 @@ jobs:
         uses: biomejs/setup-biome@v2
         with:
           version: latest
+      - name: Install Deps
+        run: pnpm install
       - name: Run Biome
         run: pnpm run ci
