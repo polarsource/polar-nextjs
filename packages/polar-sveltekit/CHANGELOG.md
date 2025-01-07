@@ -1,5 +1,11 @@
 # @polar-sh/sveltekit
 
+## 0.2.1
+
+### Patch Changes
+
+- 570c81c: Add getCustomerId resolver function
+
 ## 0.2.0
 
 ### Minor Changes
