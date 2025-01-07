@@ -1,4 +1,4 @@
-# polar-nextjs
+# @polar-sh/nextjs
 
 Payments and Checkouts made dead simple with Next.js.
 
@@ -27,6 +27,26 @@ Pass query params to this route.
 - customerId (optional) `?productId=xxx&customerId=xxx`
 - customerEmail (optional) `?productId=xxx&customerEmail=janedoe@gmail.com`
 - customerName (optional) `?productId=xxx&customerName=Jane`
+
+## Customer Portal
+
+Create a customer portal where your customer can view orders and subscriptions.
+
+```typescript
+// portal/route.ts
+import { CustomerPortal } from "@polar-sh/nextjs";
+
+export const GET = CustomerPortal({
+	accessToken: process.env.POLAR_ACCESS_TOKEN,
+	server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
+});
+```
+
+### Query Params
+
+Pass query params to this route.
+
+- customerId (required) `?customerId=xxx`
 
 ## Webhooks
 

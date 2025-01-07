@@ -18,6 +18,7 @@ export interface WebhooksConfig {
 }
 
 export type CheckoutHandler = (event: RequestEvent) => Promise<Response>;
+export type CustomerPortalHandler = (event: RequestEvent) => Promise<Response>;
 export type WebhookHandler = (event: RequestEvent) => Promise<Response>;
 
 export const Checkout = ({
@@ -76,6 +77,47 @@ export const Checkout = ({
       });
     } catch (error) {
       console.error("Catch checkout error", error);
+      return new Response(null, { status: 500 });
+    }
+  };
+};
+
+export interface CustomerPortalConfig {
+  accessToken: string;
+  server?: "sandbox" | "production";
+}
+
+export const CustomerPortal = ({
+  accessToken,
+  server,
+}: CustomerPortalConfig): CustomerPortalHandler => {
+  const polar = new Polar({
+    accessToken,
+    server,
+  });
+
+  return async (event) => {
+    const url = new URL(event.request.url);
+    const customerId = url.searchParams.get("customerId");
+
+    if (!customerId) {
+      return new Response(
+        JSON.stringify({ error: "Missing customerId in query params" }),
+        { status: 400 },
+      );
+    }
+
+    try {
+      const result = await polar.customerSessions.create({
+        customerId,
+      });
+
+      return new Response(null, {
+        status: 302,
+        headers: { Location: result.customerPortalUrl },
+      });
+    } catch (error) {
+      console.error(error);
       return new Response(null, { status: 500 });
     }
   };

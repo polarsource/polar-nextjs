@@ -73,6 +73,44 @@ export const Checkout = ({
 	};
 };
 
+export interface CustomerPortalConfig {
+	accessToken: string;
+	server: "sandbox" | "production";
+}
+
+export const CustomerPortal = ({
+	accessToken,
+	server,
+}: CustomerPortalConfig) => {
+	const polar = new Polar({
+		accessToken,
+		server,
+	});
+
+	return async (req: NextRequest) => {
+		const url = new URL(req.url);
+		const customerId = url.searchParams.get("customerId");
+
+		if (!customerId) {
+			return NextResponse.json(
+				{ error: "Missing customerId in query params" },
+				{ status: 400 },
+			);
+		}
+
+		try {
+			const result = await polar.customerSessions.create({
+				customerId,
+			});
+
+			return NextResponse.redirect(result.customerPortalUrl);
+		} catch (error) {
+			console.error(error);
+			return NextResponse.error();
+		}
+	};
+};
+
 export interface WebhooksConfig {
 	webhookSecret: string;
 	onPayload: (payload: ReturnType<typeof validateEvent>) => Promise<void>;
