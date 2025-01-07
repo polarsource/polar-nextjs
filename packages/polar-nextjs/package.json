@@ -1,5 +1,5 @@
 {
-	"name": "polar-nextjs",
+	"name": "@polar-sh/nextjs",
 	"version": "0.1.7",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
