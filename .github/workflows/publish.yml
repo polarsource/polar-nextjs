@@ -27,9 +27,9 @@ jobs:
         cache: 'pnpm'
     - run: pnpm install --frozen-lockfile
     - name: Publish to NPM
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          publish: pnpm publish-packages
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      id: changesets
+      uses: changesets/action@v1
+      with:
+        publish: pnpm publish-packages
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
