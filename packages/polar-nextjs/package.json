@@ -19,7 +19,7 @@
 		"tsup": "^8.3.5"
 	},
 	"devDependencies": {
-		"next": "^15.0.0"
+		"next": "^15.1.2"
 	},
 	"ava": {
 		"extensions": {
@@ -29,6 +29,6 @@
 		"nodeArguments": ["--loader=ts-node/esm"]
 	},
 	"peerDependencies": {
-		"next": "^15.0.0"
+		"next": "^15.1.2"
 	}
 }
