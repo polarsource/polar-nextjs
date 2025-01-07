@@ -75,12 +75,14 @@ export const Checkout = ({
 
 export interface CustomerPortalConfig {
 	accessToken: string;
+	getCustomerId: (req: NextRequest) => Promise<string>;
 	server: "sandbox" | "production";
 }
 
 export const CustomerPortal = ({
 	accessToken,
 	server,
+	getCustomerId,
 }: CustomerPortalConfig) => {
 	const polar = new Polar({
 		accessToken,
@@ -88,12 +90,11 @@ export const CustomerPortal = ({
 	});
 
 	return async (req: NextRequest) => {
-		const url = new URL(req.url);
-		const customerId = url.searchParams.get("customerId");
+		const customerId = await getCustomerId(req);
 
 		if (!customerId) {
 			return NextResponse.json(
-				{ error: "Missing customerId in query params" },
+				{ error: "customerId not defined" },
 				{ status: 400 },
 			);
 		}

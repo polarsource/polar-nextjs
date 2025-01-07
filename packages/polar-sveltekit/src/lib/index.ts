@@ -85,11 +85,13 @@ export const Checkout = ({
 export interface CustomerPortalConfig {
   accessToken: string;
   server?: "sandbox" | "production";
+  getCustomerId: (event: RequestEvent) => Promise<string>;
 }
 
 export const CustomerPortal = ({
   accessToken,
   server,
+  getCustomerId,
 }: CustomerPortalConfig): CustomerPortalHandler => {
   const polar = new Polar({
     accessToken,
@@ -97,12 +99,11 @@ export const CustomerPortal = ({
   });
 
   return async (event) => {
-    const url = new URL(event.request.url);
-    const customerId = url.searchParams.get("customerId");
+    const customerId = await getCustomerId(event);
 
     if (!customerId) {
       return new Response(
-        JSON.stringify({ error: "Missing customerId in query params" }),
+        JSON.stringify({ error: "customerId not defined" }),
         { status: 400 },
       );
     }

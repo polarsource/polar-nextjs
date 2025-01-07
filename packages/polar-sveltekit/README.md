@@ -38,15 +38,10 @@ import { CustomerPortal } from "@polar-sh/sveltekit";
 
 export const GET = CustomerPortal({
   accessToken: process.env.POLAR_ACCESS_TOKEN,
+  getCustomerId: (event) => '', // Fuction to resolve a Polar Customer ID
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
 });
 ```
-
-### Query Params
-
-Pass query params to this route.
-
-- customerId (required) `?customerId=xxx`
 
 ## Webhooks
 
