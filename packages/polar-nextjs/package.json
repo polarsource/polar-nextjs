@@ -1,7 +1,8 @@
 {
 	"name": "polar-nextjs",
 	"version": "0.1.5",
-	"main": "dist/index.js",
+ 	"main": "dist/index.js",
+	"module": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
 	"engines": {
@@ -14,12 +15,12 @@
 	},
 	"files": ["dist"],
 	"dependencies": {
-		"@polar-sh/sdk": "^0.20.0",
-		"@sindresorhus/tsconfig": "^7.0.0",
-		"tsup": "^8.3.5"
+		"@polar-sh/sdk": "^0.20.0"
 	},
 	"devDependencies": {
-		"next": "^15.0.0"
+		"@biomejs/biome": "1.9.4",
+		"@sindresorhus/tsconfig": "^7.0.0",
+		"tsup": "^8.3.5"
 	},
 	"ava": {
 		"extensions": {

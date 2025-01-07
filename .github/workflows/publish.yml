@@ -1,9 +1,10 @@
 name: Publish Package to npmjs
 
 on:
-  release:
-    types: [published]
-    
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -25,7 +26,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
     - run: pnpm install --frozen-lockfile
-    - run: pnpm run build
-    - run: pnpm publish --access public --no-git-checks
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - name: Publish to NPM
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm publish-packages
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -35,7 +35,7 @@ export const Checkout = ({
     if (!productId) {
       return new Response(
         JSON.stringify({ error: "Missing productId in query params" }),
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -99,7 +99,7 @@ export const Webhooks = ({
       webhookPayload = validateEvent(
         requestBody,
         webhookHeaders,
-        webhookSecret
+        webhookSecret,
       );
     } catch (error) {
       if (error instanceof WebhookVerificationError) {
