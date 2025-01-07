@@ -1,5 +1,11 @@
 # polar-nextjs
 
+## 0.1.9
+
+### Patch Changes
+
+- 7c66b86: fix release
+
 ## 0.1.8
 
 ### Patch Changes
