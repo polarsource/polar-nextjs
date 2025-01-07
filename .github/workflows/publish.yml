@@ -15,6 +15,7 @@ jobs:
         node-version: [20]
     permissions:
       contents: 'write'
+      pull-requests: 'write'
     steps:
     - uses: actions/checkout@v4
     
