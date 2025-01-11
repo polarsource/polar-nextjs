@@ -22,7 +22,7 @@ vi.mock("@polar-sh/sdk", async (importOriginal) => {
 
 	return {
 		...(await importOriginal()),
-		Polar
+		Polar,
 	};
 });
 

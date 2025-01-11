@@ -1,5 +1,8 @@
 import { Polar } from "@polar-sh/sdk";
-import { WebhookVerificationError, validateEvent } from "@polar-sh/sdk/webhooks";
+import {
+	WebhookVerificationError,
+	validateEvent,
+} from "@polar-sh/sdk/webhooks";
 import type { Context } from "hono";
 
 export interface CheckoutConfig {
@@ -16,7 +19,7 @@ export const Checkout = ({
 	includeCheckoutId = true,
 }: CheckoutConfig) => {
 	const polar = new Polar({
-		accessToken: accessToken ?? process.env["POLAR_ACCESS_TOKEN"],
+		accessToken: accessToken ?? process.env.POLAR_ACCESS_TOKEN,
 		server,
 	});
 
@@ -82,7 +85,7 @@ export const CustomerPortal = ({
 	getCustomerId,
 }: CustomerPortalConfig) => {
 	const polar = new Polar({
-		accessToken: accessToken ?? process.env["POLAR_ACCESS_TOKEN"],
+		accessToken: accessToken ?? process.env.POLAR_ACCESS_TOKEN,
 		server,
 	});
 
