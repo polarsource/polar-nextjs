@@ -15,6 +15,7 @@ import { Checkout } from "@polar-sh/hono";
 const app = new Hono();
 
 app.get('/checkout', Checkout({
+  accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
   successUrl: process.env.SUCCESS_URL,
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
 }));
@@ -40,6 +41,7 @@ import { CustomerPortal } from "@polar-sh/hono";
 const app = new Hono()
 
 app.get('/portal', CustomerPortal({
+  accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
   getCustomerId: (event) => "", // Fuction to resolve a Polar Customer ID
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
 }))
