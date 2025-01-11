@@ -9,10 +9,10 @@ Payments and Checkouts made dead simple with Express.
 Create a Checkout handler which takes care of redirections.
 
 ```typescript
-import { Express } from 'express'
+import express from 'express'
 import { Checkout } from "@polar-sh/express";
 
-const app = new Express();
+const app = express();
 
 app.get('/checkout', Checkout({
   successUrl: process.env.SUCCESS_URL,
@@ -34,10 +34,10 @@ Pass query params to this route.
 Create a customer portal where your customer can view orders and subscriptions.
 
 ```typescript
-import { Express } from 'express'
+import express from 'express'
 import { CustomerPortal } from "@polar-sh/express";
 
-const app = new Express()
+const app = express()
 
 app.get('/portal', CustomerPortal({
   getCustomerId: (event) => "", // Fuction to resolve a Polar Customer ID
@@ -50,12 +50,14 @@ app.get('/portal', CustomerPortal({
 A simple utility which resolves incoming webhook payloads by signing the webhook secret properly.
 
 ```typescript
-import { Express } from 'express'
+import express from 'express'
 import { Webhooks } from "@polar-sh/express";
 
-const app = new Express()
+const app = express()
 
-app.post('/polar/webhooks', Webhooks({
+app
+.use(express.json())
+.post('/polar/webhooks', Webhooks({
   webhookSecret: process.env.POLAR_WEBHOOK_SECRET!,
   onPayload: async (payload) => /** Handle payload */,
 }))
