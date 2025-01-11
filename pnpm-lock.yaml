@@ -79,6 +79,9 @@ importers:
       prettier:
         specifier: ^3.2.5
         version: 3.3.3
+      tsup:
+        specifier: ^8.3.5
+        version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(postcss@8.4.49)(typescript@5.7.2)
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@20.17.12)
