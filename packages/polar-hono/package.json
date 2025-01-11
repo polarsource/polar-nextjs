@@ -1,6 +1,6 @@
 {
   "name": "@polar-sh/hono",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Polar integration for Hono",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -11,9 +11,9 @@
   },
   "scripts": {
     "test": "vitest",
-		"build": "tsup ./src/index.ts --format esm --dts",
-		"dev": "tsc --watch",
-		"check": "biome check --write ./src"
+    "build": "tsup ./src/index.ts --format esm --dts",
+    "dev": "tsc --watch",
+    "check": "biome check --write ./src"
   },
   "files": [
     "dist"
@@ -28,7 +28,7 @@
     "hono": "^4.6.16"
   },
   "devDependencies": {
-		"@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "1.9.4",
     "@sindresorhus/tsconfig": "^7.0.0",
     "@types/node": "^20.0.0",
     "hono": "^4.6.16",
