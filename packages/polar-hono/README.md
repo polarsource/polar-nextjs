@@ -1,22 +1,23 @@
-# @polar-sh/sveltekit
+# @polar-sh/hono
 
-Payments and Checkouts made dead simple with Sveltekit.
+Payments and Checkouts made dead simple with Hono.
 
-`pnpm install @polar-sh/sveltekit`
+`pnpm install @polar-sh/hono`
 
 ## Checkout
 
 Create a Checkout handler which takes care of redirections.
 
 ```typescript
-// /api/checkout/+server.ts
-import { Checkout } from "@polar-sh/sveltekit";
+import { Hono } from 'hono'
+import { Checkout } from "@polar-sh/hono";
 
-export const GET = Checkout({
-  accessToken: process.env.POLAR_ACCESS_TOKEN,
+const app = new Hono();
+
+app.get('/checkout', Checkout({
   successUrl: process.env.SUCCESS_URL,
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
-});
+}));
 ```
 
 ### Query Params
@@ -33,14 +34,15 @@ Pass query params to this route.
 Create a customer portal where your customer can view orders and subscriptions.
 
 ```typescript
-// /api/portal/+server.ts
-import { CustomerPortal } from "@polar-sh/sveltekit";
+import { Hono } from 'hono'
+import { CustomerPortal } from "@polar-sh/hono";
 
-export const GET = CustomerPortal({
-  accessToken: process.env.POLAR_ACCESS_TOKEN,
+const app = new Hono()
+
+app.get('/portal', CustomerPortal({
   getCustomerId: (event) => "", // Fuction to resolve a Polar Customer ID
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
-});
+}))
 ```
 
 ## Webhooks
@@ -48,14 +50,13 @@ export const GET = CustomerPortal({
 A simple utility which resolves incoming webhook payloads by signing the webhook secret properly.
 
 ```typescript
-// api/webhook/polar/route.ts
-import { Webhooks } from "@polar-sh/sveltekit";
+import { Hono } from 'hono'
+import { Webhooks } from "@polar-sh/hono";
 
-export const POST = Webhooks({
+const app = new Hono()
+
+app.post('/polar/webhooks', Webhooks({
   webhookSecret: process.env.POLAR_WEBHOOK_SECRET!,
-  onPayload: async (payload) => {
-    // Handle the payload
-    // No need to return an acknowledge response
-  },
-});
+  onPayload: async (payload) => /** Handle payload */,
+}))
 ```
