@@ -8,19 +8,29 @@ const mockCheckoutCreate = vi.fn().mockResolvedValue({ url: mockCheckoutUrl });
 
 // Mock the module before any imports
 vi.mock("@polar-sh/sdk", async (importOriginal) => {
+	class Polar {
+		customerSessions = {
+			create: mockSessionCreate,
+		};
+
+		checkouts = {
+			custom: {
+				create: mockCheckoutCreate,
+			},
+		};
+	}
+
 	return {
+		...(await importOriginal()),
+		Polar
+	};
+});
+
+vi.mock("@polar-sh/sdk/webhooks", async (importOriginal) => {
+	return {
+		...(await importOriginal()),
 		WebhookVerificationError: vi.fn(),
 		validateEvent: vi.fn((v) => JSON.parse(v)),
-		Polar: () => ({
-			customerSessions: {
-				create: mockSessionCreate,
-			},
-			checkouts: {
-				custom: {
-					create: mockCheckoutCreate,
-				},
-			},
-		}),
 	};
 });
 
