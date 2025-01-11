@@ -1,5 +1,11 @@
 # @polar-sh/hono
 
+## 0.1.4
+
+### Patch Changes
+
+- fd20c5a: fix biome
+
 ## 0.1.3
 
 ### Patch Changes
