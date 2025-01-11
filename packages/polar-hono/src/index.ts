@@ -19,7 +19,8 @@ export const Checkout = ({
 	includeCheckoutId = true,
 }: CheckoutConfig) => {
 	const polar = new Polar({
-		accessToken: accessToken ?? process.env.POLAR_ACCESS_TOKEN,
+		/** biome-ignore lint/complexity/useLiteralKeys: fix ci */
+		accessToken: accessToken ?? process.env["POLAR_ACCESS_TOKEN"],
 		server,
 	});
 
@@ -84,10 +85,12 @@ export const CustomerPortal = ({
 	server,
 	getCustomerId,
 }: CustomerPortalConfig) => {
-	const polar = new Polar({
-		accessToken: accessToken ?? process.env.POLAR_ACCESS_TOKEN,
-		server,
-	});
+	const polar = new Polar(
+		/** biome-ignore lint/complexity/useLiteralKeys: fix ci */ {
+			accessToken: accessToken ?? process.env["POLAR_ACCESS_TOKEN"],
+			server,
+		},
+	);
 
 	return async (c: Context) => {
 		const customerId = await getCustomerId(c);
