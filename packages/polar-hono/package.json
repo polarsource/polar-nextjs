@@ -1,0 +1,41 @@
+{
+  "name": "@polar-sh/hono",
+  "version": "0.1.0",
+  "description": "Polar integration for Hono",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "vitest",
+		"build": "tsup ./src/index.ts --format esm --dts",
+		"dev": "tsc --watch",
+		"check": "biome check --write ./src"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "polar",
+    "hono",
+    "payments",
+    "subscriptions"
+  ],
+  "peerDependencies": {
+    "hono": "^4.6.16"
+  },
+  "devDependencies": {
+		"@biomejs/biome": "1.9.4",
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "@types/node": "^20.0.0",
+    "hono": "^4.6.16",
+    "prettier": "^3.2.5",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@polar-sh/sdk": "^0.20.0"
+  }
+}
