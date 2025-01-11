@@ -1,0 +1,45 @@
+{
+  "name": "@polar-sh/express",
+  "version": "0.1.4",
+  "description": "Polar integration for Express",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup ./src/index.ts --format esm --dts",
+    "dev": "tsc --watch",
+    "check": "biome check --write ./src"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "polar",
+    "express",
+    "payments",
+    "subscriptions"
+  ],
+  "peerDependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/supertest": "^6.0.2",
+    "express": "^4.21.2",
+    "prettier": "^3.2.5",
+    "supertest": "^7.0.0",
+    "tsup": "^8.3.5",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@polar-sh/sdk": "^0.20.0"
+  }
+}
