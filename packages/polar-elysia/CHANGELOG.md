@@ -1,5 +1,11 @@
 # @polar-sh/elysia
 
+## 0.1.2
+
+### Patch Changes
+
+- b3f4349: fix early return
+
 ## 0.1.1
 
 ### Patch Changes
