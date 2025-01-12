@@ -2,16 +2,26 @@
   "name": "@polar-sh/express",
   "version": "0.1.5",
   "description": "Polar integration for Express",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "require": "./dist/index.cjs"
+    }
+  },
   "engines": {
     "node": ">=16"
   },
+  "type": "module",
   "scripts": {
     "test": "vitest",
-    "build": "tsup ./src/index.ts --format esm --dts",
+    "build": "tsup ./src/index.ts --format esm,cjs --dts --clean --sourcemap",
     "dev": "tsc --watch",
     "check": "biome check --write ./src"
   },

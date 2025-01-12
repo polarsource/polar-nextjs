@@ -12,5 +12,6 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext"
   },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["dist", "svelte.config.js", ".svelte-kit"]
 }

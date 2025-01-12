@@ -22,6 +22,9 @@
     },
     "ci": {
       "dependsOn": ["check", "build"]
+    },
+    "test": {
+      "dependsOn": ["check"]
     }
   }
 }
