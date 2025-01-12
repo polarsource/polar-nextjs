@@ -1,5 +1,11 @@
 # @polar-sh/hono
 
+## 0.1.1
+
+### Patch Changes
+
+- 4db521c: Init Remix
+
 ## 0.2.0
 
 ### Minor Changes
