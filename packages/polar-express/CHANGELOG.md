@@ -1,5 +1,11 @@
 # @polar-sh/hono
 
+## 0.2.0
+
+### Minor Changes
+
+- eb28d55: Add CommonJS module and Sourcemaps
+
 ## 0.1.5
 
 ### Patch Changes

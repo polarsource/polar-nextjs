@@ -1,5 +1,11 @@
 # polar-nextjs
 
+## 0.3.0
+
+### Minor Changes
+
+- eb28d55: Add CommonJS module and Sourcemaps
+
 ## 0.2.1
 
 ### Patch Changes
