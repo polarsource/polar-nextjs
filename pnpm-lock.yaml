@@ -22,22 +22,6 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
 
-<<<<<<< HEAD
-=======
-  packages/core:
-    dependencies:
-      '@sindresorhus/tsconfig':
-        specifier: ^7.0.0
-        version: 7.0.0
-      vitest:
-        specifier: ^2.1.8
-        version: 2.1.8(@types/node@20.0.0)(terser@5.37.0)
-    devDependencies:
-      '@types/node':
-        specifier: '20.0'
-        version: 20.0.0
-
->>>>>>> 35d592c (polar nuxt)
   packages/eslint-config:
     devDependencies:
       '@eslint/js':
@@ -236,11 +220,14 @@ importers:
         specifier: ^8.3.5
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(postcss@8.4.49)(typescript@5.7.2)
 =======
         version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
 >>>>>>> 36b96ee (update lock file)
 =======
+=======
+>>>>>>> 6882d38 (fix lockfile)
         version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
 =======
 <<<<<<< HEAD
@@ -249,7 +236,13 @@ importers:
         version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+        version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@20.17.12)(terser@5.37.0)
@@ -1455,15 +1448,23 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   '@redocly/ajv@8.11.2':
     resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
 
@@ -1476,6 +1477,7 @@ packages:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -1484,12 +1486,19 @@ packages:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   '@remix-run/node@2.15.2':
     resolution: {integrity: sha512-NS/h5uxje7DYCNgcKqKAiUhf0r2HVnoYUBWLyIIMmCUP1ddWurBP6xTPcWzGhEvV/EvguniYi1wJZ5+X8sonWw==}
     engines: {node: '>=18.0.0'}
@@ -1527,98 +1536,6 @@ packages:
 
   '@remix-run/web-stream@1.1.0':
     resolution: {integrity: sha512-KRJtwrjRV5Bb+pM7zxcTJkhIqWWSy+MYsIxHK+0m5atcznsf15YwUBWHWulZerV2+vvHH1Lp1DD7pw6qKW8SgA==}
-=======
-  '@redocly/ajv@8.11.2':
-    resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
-
-  '@redocly/config@0.17.1':
-    resolution: {integrity: sha512-CEmvaJuG7pm2ylQg53emPmtgm4nW2nxBgwXzbVEHpGas/lGnMyN8Zlkgiz6rPw0unASg6VW3wlz27SOL5XFHYQ==}
-
-  '@redocly/openapi-core@1.27.1':
-    resolution: {integrity: sha512-zQ47/A+Drk2Y75/af69MD3Oad4H9LxkUDzcm7XBkyLNDKIWQrDKDnS5476oDq77+zciymNxgMVtxxVXlnGS8kw==}
-    engines: {node: '>=14.19.0', npm: '>=7.0.0'}
-
-  '@rollup/plugin-alias@5.1.1':
-    resolution: {integrity: sha512-PR9zDb+rOzkRb2VD+EuKB7UC41vU5DIwZ5qqCpk0KJudcWAyi8rvYOhS7+L5aZCspw1stTViLgN5v6FF1p5cgQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/plugin-commonjs@25.0.8':
-    resolution: {integrity: sha512-ZEZWTK5n6Qde0to4vS9Mr5x/0UZoqCxPVR9KRUjU4kA2sO7GEUn1fop0DAwpO6z0Nw/kJON9bDmSxdWxO/TT1A==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^2.68.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/plugin-commonjs@28.0.2':
-    resolution: {integrity: sha512-BEFI2EDqzl+vA1rl97IDRZ61AIwGH093d9nz8+dThxJNH8oSoB7MjWvPCX3dkaK1/RCJ/1v/R1XB15FuSs0fQw==}
-    engines: {node: '>=16.0.0 || 14 >= 14.17'}
-    peerDependencies:
-      rollup: ^2.68.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/plugin-inject@5.0.5':
-    resolution: {integrity: sha512-2+DEJbNBoPROPkgTDNe8/1YXWcqxbN5DTjASVIOx8HS+pITXushyNiBV56RB08zuptzz8gT3YfkqriTBVycepg==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/plugin-json@6.1.0':
-    resolution: {integrity: sha512-EGI2te5ENk1coGeADSIwZ7G2Q8CJS2sF120T7jLw4xFw9n7wIOXHo+kIYRAoVpJAN+kmqZSoO3Fp4JtoNF4ReA==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/plugin-node-resolve@15.3.1':
-    resolution: {integrity: sha512-tgg6b91pAybXHJQMAAwW9VuWBO6Thi+q7BCNARLwSqlmsHz0XYURtGvh/AuwSADXSI4h/2uHbs7s4FzlZDGSGA==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^2.78.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/plugin-replace@5.0.7':
-    resolution: {integrity: sha512-PqxSfuorkHz/SPpyngLyg5GCEkOcee9M1bkxiVDr41Pd61mqP1PLOoDPbpl44SB2mQGKwV/In74gqQmGITOhEQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/plugin-replace@6.0.2':
-    resolution: {integrity: sha512-7QaYCf8bqF04dOy7w/eHmJeNExxTYwvKAmlSAH/EaWWUzbT0h5sbF6bktFoX/0F/0qwng5/dWFMyf3gzaM8DsQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-
-  '@rollup/plugin-terser@0.4.4':
-    resolution: {integrity: sha512-XHeJC5Bgvs8LfukDwWZp7yeqin6ns8RTl2B9avbejt6tZqsqvVoWI7ZTQrcNsfKEDWBTnTxM8nMDkO2IFFbd0A==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
->>>>>>> 35d592c (polar nuxt)
 
   '@rollup/plugin-alias@5.1.1':
     resolution: {integrity: sha512-PR9zDb+rOzkRb2VD+EuKB7UC41vU5DIwZ5qqCpk0KJudcWAyi8rvYOhS7+L5aZCspw1stTViLgN5v6FF1p5cgQ==}
@@ -1827,14 +1744,8 @@ packages:
   '@rushstack/ts-command-line@4.19.1':
     resolution: {integrity: sha512-J7H768dgcpG60d7skZ5uSSwyCZs/S2HrWP1Ds8d1qYAyaaeJmpmmLr9BVw97RjFzmQPOYnoXcKA4GkqDCkduQg==}
 
-<<<<<<< HEAD
   '@sinclair/typebox@0.34.13':
     resolution: {integrity: sha512-ceVKqyCEgC355Kw0s/0tyfY9MzMQINSykJ/pG2w6YnaZyrcjV48svZpr8lVZrYgWjzOmrIPBhQRAtr/7eJpA5g==}
-=======
-  '@sindresorhus/merge-streams@2.3.0':
-    resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
-    engines: {node: '>=18'}
->>>>>>> 35d592c (polar nuxt)
 
   '@sindresorhus/merge-streams@2.3.0':
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
@@ -2177,17 +2088,11 @@ packages:
   '@vue/shared@3.5.13':
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
 
-<<<<<<< HEAD
   '@web3-storage/multipart-parser@1.0.0':
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
 
   '@zxing/text-encoding@0.9.0':
     resolution: {integrity: sha512-U/4aVJ2mxI0aDNI8Uq0wEhMgY+u4CNtEb0om3+y3+niDAsoTCOB33UF0sxpzqzdqXLqmvc+vZyAt4O8pPdfkwA==}
-=======
-  abbrev@2.0.0:
-    resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
->>>>>>> 35d592c (polar nuxt)
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -2398,6 +2303,7 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
@@ -2406,6 +2312,8 @@ packages:
 >>>>>>> a768c4b (polar nuxt)
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
   browserslist@4.24.4:
     resolution: {integrity: sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
@@ -2428,7 +2336,12 @@ packages:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
 =======
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   browserslist@4.24.4:
     resolution: {integrity: sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
@@ -2443,11 +2356,14 @@ packages:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
 =======
+=======
+>>>>>>> 6882d38 (fix lockfile)
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 =======
@@ -2465,7 +2381,12 @@ packages:
 
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   buffer@6.0.3:
     resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
 
@@ -2476,6 +2397,7 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 35d592c (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
@@ -2486,6 +2408,8 @@ packages:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 >>>>>>> 35d592c (polar nuxt)
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
@@ -2493,7 +2417,12 @@ packages:
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   bundle-require@5.1.0:
     resolution: {integrity: sha512-3WrrOuZiyaaZPWiEt4G3+IffISVC9HYlWueJEBWED4ZH4aIAC2PnkdnuRrR94M+w6yGWn4AglWtJtBI8YqvgoA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -2746,15 +2675,23 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   crossws@0.3.1:
     resolution: {integrity: sha512-HsZgeVYaG+b5zA+9PbIPGq4+J/CJynJuearykPsXx4V/eMhyQ5EDVg3Ak2FBZtVXCiOLu/U7IiwDHTr9MA+IKw==}
 
@@ -2811,6 +2748,7 @@ packages:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -2819,72 +2757,23 @@ packages:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   data-uri-to-buffer@3.0.1:
     resolution: {integrity: sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==}
     engines: {node: '>= 6'}
 
-=======
-  crossws@0.3.1:
-    resolution: {integrity: sha512-HsZgeVYaG+b5zA+9PbIPGq4+J/CJynJuearykPsXx4V/eMhyQ5EDVg3Ak2FBZtVXCiOLu/U7IiwDHTr9MA+IKw==}
-
-  css-declaration-sorter@7.2.0:
-    resolution: {integrity: sha512-h70rUM+3PNFuaBDTLe8wF/cdWu+dOZmb7pJt8Z2sedYbAcQVQV/tEchueg3GWxwqS0cxtbxmaHEdkNACqcvsow==}
-    engines: {node: ^14 || ^16 || >=18}
-    peerDependencies:
-      postcss: ^8.0.9
-
-  css-select@5.1.0:
-    resolution: {integrity: sha512-nwoRF1rvRRnnCqqY7updORDsuqKzqYJ28+oSMaJMMgOauh3fvwHqMS7EZpIPqK8GL+g9mKxF1vP/ZjSeNjEVHg==}
-
-  css-tree@2.2.1:
-    resolution: {integrity: sha512-OA0mILzGc1kCOCSJerOeqDxDQ4HOh+G8NbOJFOTgOCzpw7fCBubk0fEyxp8AgOL/jvLgYA/uV0cMbe43ElF1JA==}
-    engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
-
-  css-tree@2.3.1:
-    resolution: {integrity: sha512-6Fv1DV/TYw//QF5IzQdqsNDjx/wc8TrMBZsqjL9eW01tWb7R7k/mq+/VXfJCl7SoD5emsJop9cOByJZfs8hYIw==}
-    engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
-
-  css-what@6.1.0:
-    resolution: {integrity: sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==}
-    engines: {node: '>= 6'}
-
-  cssesc@3.0.0:
-    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
-    engines: {node: '>=4'}
-    hasBin: true
-
-  cssnano-preset-default@7.0.6:
-    resolution: {integrity: sha512-ZzrgYupYxEvdGGuqL+JKOY70s7+saoNlHSCK/OGn1vB2pQK8KSET8jvenzItcY+kA7NoWvfbb/YhlzuzNKjOhQ==}
-    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
-    peerDependencies:
-      postcss: ^8.4.31
-
-  cssnano-utils@5.0.0:
-    resolution: {integrity: sha512-Uij0Xdxc24L6SirFr25MlwC2rCFX6scyUmuKpzI+JQ7cyqDEwD42fJ0xfB3yLfOnRDU5LKGgjQ9FA6LYh76GWQ==}
-    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
-    peerDependencies:
-      postcss: ^8.4.31
-
-  cssnano@7.0.6:
-    resolution: {integrity: sha512-54woqx8SCbp8HwvNZYn68ZFAepuouZW4lTwiMVnBErM3VkO7/Sd4oTOt3Zz3bPx3kxQ36aISppyXj2Md4lg8bw==}
-    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
-    peerDependencies:
-      postcss: ^8.4.31
-
-  csso@5.0.5:
-    resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
-    engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
-
-  csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
-
->>>>>>> 35d592c (polar nuxt)
   data-view-buffer@1.0.1:
     resolution: {integrity: sha512-0lht7OugA5x3iJLOWFhWK/5ehONdprk0ISXqVFn/NFrDu+cuc8iADFrGQz5BnRK7LLU3JmkbXSxaqX+/mXYtUA==}
     engines: {node: '>= 0.4'}
@@ -3062,21 +2951,30 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   dotenv@16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -3085,23 +2983,22 @@ packages:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
-=======
-  dotenv@16.4.7:
-    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
-    engines: {node: '>=12'}
-
-  duplexer@0.1.2:
-    resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
->>>>>>> 35d592c (polar nuxt)
 
   duplexer@0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
@@ -3116,6 +3013,7 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   electron-to-chromium@1.5.80:
     resolution: {integrity: sha512-LTrKpW0AqIuHwmlVNV+cjFYTnXtM9K37OGhpe0ZI10ScPSxqVSryZHIY3WnCS5NSYbBODRTZyhRMS2h5FAEqAw==}
@@ -3124,6 +3022,8 @@ packages:
 =======
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
   electron-to-chromium@1.5.80:
     resolution: {integrity: sha512-LTrKpW0AqIuHwmlVNV+cjFYTnXtM9K37OGhpe0ZI10ScPSxqVSryZHIY3WnCS5NSYbBODRTZyhRMS2h5FAEqAw==}
 
@@ -3141,7 +3041,15 @@ packages:
 
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+  electron-to-chromium@1.5.80:
+    resolution: {integrity: sha512-LTrKpW0AqIuHwmlVNV+cjFYTnXtM9K37OGhpe0ZI10ScPSxqVSryZHIY3WnCS5NSYbBODRTZyhRMS2h5FAEqAw==}
+
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   elysia@1.2.10:
     resolution: {integrity: sha512-QcNl2FjhHFRpKaqy1NoMpyCjJ7OcKBnHwLUkqGu09QwIV84PFb82ILvYJG4GS1RbGv76OA50luaqBLrM3SLZ2w==}
     peerDependencies:
@@ -3153,10 +3061,6 @@ packages:
         optional: true
       typescript:
         optional: true
-=======
-  electron-to-chromium@1.5.80:
-    resolution: {integrity: sha512-LTrKpW0AqIuHwmlVNV+cjFYTnXtM9K37OGhpe0ZI10ScPSxqVSryZHIY3WnCS5NSYbBODRTZyhRMS2h5FAEqAw==}
->>>>>>> 35d592c (polar nuxt)
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3356,12 +3260,15 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3374,7 +3281,12 @@ packages:
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   events@3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
     engines: {node: '>=0.8.x'}
@@ -3390,6 +3302,7 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 35d592c (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
@@ -3400,6 +3313,8 @@ packages:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 >>>>>>> 35d592c (polar nuxt)
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
@@ -3407,7 +3322,12 @@ packages:
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   expect-type@1.1.0:
     resolution: {integrity: sha512-bFi65yM+xZgk+u/KRIpekdSYkTB5W1pEf0Lt8Q8Msh7b+eQ7LXVtIB1Bkm4fvclDEL1b2CZkMhv2mOeF8tMdkA==}
     engines: {node: '>=12.0.0'}
@@ -3572,7 +3492,6 @@ packages:
     resolution: {integrity: sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ==}
     engines: {node: '>= 0.4'}
 
-<<<<<<< HEAD
   get-intrinsic@1.2.7:
     resolution: {integrity: sha512-VW6Pxhsrk0KAOqs3WEd0klDiF/+V7gQOpAvY1jVU/LHmaD/kQO4523aiJuikX/QAKYiW6x8Jh+RJej1almdtCA==}
     engines: {node: '>= 0.4'}
@@ -3583,18 +3502,6 @@ packages:
   get-proto@1.0.1:
     resolution: {integrity: sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==}
     engines: {node: '>= 0.4'}
-=======
-  get-port-please@3.1.2:
-    resolution: {integrity: sha512-Gxc29eLs1fbn6LQ4jSU4vXjlwyZhF5HsGuMAa7gqBP4Rw4yxxltyDUuF5MBclFzDTXO+ACchGQoeela4DSfzdQ==}
-
-  get-stream@6.0.1:
-    resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==}
-    engines: {node: '>=10'}
-
-  get-stream@8.0.1:
-    resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
-    engines: {node: '>=16'}
->>>>>>> 35d592c (polar nuxt)
 
   get-stream@6.0.1:
     resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==}
@@ -3846,6 +3753,7 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
@@ -3854,6 +3762,8 @@ packages:
 =======
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
@@ -3871,14 +3781,21 @@ packages:
 
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
   is-arguments@1.2.0:
     resolution: {integrity: sha512-7bVbi0huj/wrIAOzb8U1aszg9kdi3KN/CyU19CTI7tAoZYEZoL9yCDXpbXN+uPsuWnP02cyug1gleqq+TU+YCA==}
     engines: {node: '>= 0.4'}
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
->>>>>>> 35d592c (polar nuxt)
+
+>>>>>>> 3baad08 (fix lockfile)
+  is-arguments@1.2.0:
+    resolution: {integrity: sha512-7bVbi0huj/wrIAOzb8U1aszg9kdi3KN/CyU19CTI7tAoZYEZoL9yCDXpbXN+uPsuWnP02cyug1gleqq+TU+YCA==}
+    engines: {node: '>= 0.4'}
 
   is-array-buffer@3.0.4:
     resolution: {integrity: sha512-wcjaerHw0ydZwfhiKbXJWLDY8A7yV7KhjQOpb83hGgGfId/aQa4TOvwyzn2PuswW2gPCYEL/nEAiSVpdOj1lXw==}
@@ -4266,6 +4183,7 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
@@ -4274,6 +4192,8 @@ packages:
 =======
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
@@ -4291,20 +4211,21 @@ packages:
 
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
-  mdn-data@2.0.28:
-    resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
-
-  mdn-data@2.0.30:
-    resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
->>>>>>> 35d592c (polar nuxt)
+>>>>>>> 3baad08 (fix lockfile)
+  math-intrinsics@1.1.0:
+    resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
+    engines: {node: '>= 0.4'}
 
   mdn-data@2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
@@ -5797,24 +5718,9 @@ packages:
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
-<<<<<<< HEAD
   undici@6.21.0:
     resolution: {integrity: sha512-BUgJXc752Kou3oOIuU1i+yZZypyZRqNPW0vqoMPl8VaoalSfeR0D8/t4iAS3yirs79SSMTxTag+ZC86uswv+Cw==}
     engines: {node: '>=18.17'}
-=======
-  unenv@1.10.0:
-    resolution: {integrity: sha512-wY5bskBQFL9n3Eca5XnhH6KbUo/tfvkwm9OpcdCvLaeA7piBNbavbOKJySEwQ1V0RH6HvNlSAFRTpvTqgKRQXQ==}
-
-  unhead@1.11.15:
-    resolution: {integrity: sha512-fA0rYB7qMHKY4sg0yzEXhi0cqiF/nl/OUKNaXOS9ChJwCjJxabpZvmQIUOiGS+1ckoFbZc3qZnhDLpdeNhOQwg==}
-
-  unicorn-magic@0.1.0:
-    resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
-    engines: {node: '>=18'}
-
-  unimport@3.14.5:
-    resolution: {integrity: sha512-tn890SwFFZxqaJSKQPPd+yygfKSATbM8BZWW1aCR2TJBTs1SDrmLamBueaFtYsGjHtQaRgqEbQflOjN2iW12gA==}
->>>>>>> 35d592c (polar nuxt)
 
   unenv@1.10.0:
     resolution: {integrity: sha512-wY5bskBQFL9n3Eca5XnhH6KbUo/tfvkwm9OpcdCvLaeA7piBNbavbOKJySEwQ1V0RH6HvNlSAFRTpvTqgKRQXQ==}
@@ -5950,15 +5856,23 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   urlpattern-polyfill@8.0.2:
     resolution: {integrity: sha512-Qp95D4TPJl1kC9SKigDcqgyM2VDVO4RiJc2d4qe5GrYm+zbIQCWWKAFaJNQ4BhdFeDGwBmAxqJBwWSJDb9T3BQ==}
 
@@ -5967,6 +5881,7 @@ packages:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -5975,21 +5890,21 @@ packages:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   util@0.12.5:
     resolution: {integrity: sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA==}
-=======
-  urlpattern-polyfill@8.0.2:
-    resolution: {integrity: sha512-Qp95D4TPJl1kC9SKigDcqgyM2VDVO4RiJc2d4qe5GrYm+zbIQCWWKAFaJNQ4BhdFeDGwBmAxqJBwWSJDb9T3BQ==}
-
-  util-deprecate@1.0.2:
-    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
->>>>>>> 35d592c (polar nuxt)
 
   utils-merge@1.0.1:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
@@ -6224,15 +6139,23 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   vue@3.5.13:
     resolution: {integrity: sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==}
     peerDependencies:
@@ -6243,6 +6166,7 @@ packages:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -6251,30 +6175,25 @@ packages:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   web-encoding@1.1.5:
     resolution: {integrity: sha512-HYLeVCdJ0+lBYV2FvNZmv3HJ2Nt0QYXqZojk3d9FJOLkwnuhzM9tmamh8d7HPM8QqjKH8DeHkFTx+CFlWpZZDA==}
 
   web-streams-polyfill@3.3.3:
     resolution: {integrity: sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==}
     engines: {node: '>= 8'}
-=======
-  vue@3.5.13:
-    resolution: {integrity: sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
-  webidl-conversions@3.0.1:
-    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
->>>>>>> 35d592c (polar nuxt)
 
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
@@ -7619,15 +7538,23 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   '@redocly/ajv@8.11.2':
     dependencies:
       fast-deep-equal: 3.1.3
@@ -7655,6 +7582,7 @@ snapshots:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -7663,12 +7591,19 @@ snapshots:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   '@remix-run/node@2.15.2(typescript@5.7.2)':
     dependencies:
       '@remix-run/server-runtime': 2.15.2(typescript@5.7.2)
@@ -7722,133 +7657,6 @@ snapshots:
   '@remix-run/web-stream@1.1.0':
     dependencies:
       web-streams-polyfill: 3.3.3
-=======
-  '@redocly/ajv@8.11.2':
-    dependencies:
-      fast-deep-equal: 3.1.3
-      json-schema-traverse: 1.0.0
-      require-from-string: 2.0.2
-      uri-js-replace: 1.0.1
-
-  '@redocly/config@0.17.1': {}
-
-  '@redocly/openapi-core@1.27.1(supports-color@9.4.0)':
-    dependencies:
-      '@redocly/ajv': 8.11.2
-      '@redocly/config': 0.17.1
-      colorette: 1.4.0
-      https-proxy-agent: 7.0.6(supports-color@9.4.0)
-      js-levenshtein: 1.1.6
-      js-yaml: 4.1.0
-      minimatch: 5.1.6
-      node-fetch: 2.7.0
-      pluralize: 8.0.0
-      yaml-ast-parser: 0.0.43
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-
-  '@rollup/plugin-alias@5.1.1(rollup@3.29.5)':
-    optionalDependencies:
-      rollup: 3.29.5
-
-  '@rollup/plugin-alias@5.1.1(rollup@4.30.0)':
-    optionalDependencies:
-      rollup: 4.30.0
-
-  '@rollup/plugin-commonjs@25.0.8(rollup@3.29.5)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@3.29.5)
-      commondir: 1.0.1
-      estree-walker: 2.0.2
-      glob: 8.1.0
-      is-reference: 1.2.1
-      magic-string: 0.30.17
-    optionalDependencies:
-      rollup: 3.29.5
-
-  '@rollup/plugin-commonjs@28.0.2(rollup@4.30.0)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.30.0)
-      commondir: 1.0.1
-      estree-walker: 2.0.2
-      fdir: 6.4.2(picomatch@4.0.2)
-      is-reference: 1.2.1
-      magic-string: 0.30.17
-      picomatch: 4.0.2
-    optionalDependencies:
-      rollup: 4.30.0
-
-  '@rollup/plugin-inject@5.0.5(rollup@4.30.0)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.30.0)
-      estree-walker: 2.0.2
-      magic-string: 0.30.17
-    optionalDependencies:
-      rollup: 4.30.0
-
-  '@rollup/plugin-json@6.1.0(rollup@3.29.5)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@3.29.5)
-    optionalDependencies:
-      rollup: 3.29.5
-
-  '@rollup/plugin-json@6.1.0(rollup@4.30.0)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.30.0)
-    optionalDependencies:
-      rollup: 4.30.0
-
-  '@rollup/plugin-node-resolve@15.3.1(rollup@3.29.5)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@3.29.5)
-      '@types/resolve': 1.20.2
-      deepmerge: 4.3.1
-      is-module: 1.0.0
-      resolve: 1.22.10
-    optionalDependencies:
-      rollup: 3.29.5
-
-  '@rollup/plugin-node-resolve@15.3.1(rollup@4.30.0)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.30.0)
-      '@types/resolve': 1.20.2
-      deepmerge: 4.3.1
-      is-module: 1.0.0
-      resolve: 1.22.10
-    optionalDependencies:
-      rollup: 4.30.0
-
-  '@rollup/plugin-replace@5.0.7(rollup@3.29.5)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@3.29.5)
-      magic-string: 0.30.17
-    optionalDependencies:
-      rollup: 3.29.5
-
-  '@rollup/plugin-replace@6.0.2(rollup@4.30.0)':
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.30.0)
-      magic-string: 0.30.17
-    optionalDependencies:
-      rollup: 4.30.0
-
-  '@rollup/plugin-terser@0.4.4(rollup@4.30.0)':
-    dependencies:
-      serialize-javascript: 6.0.2
-      smob: 1.5.0
-      terser: 5.37.0
-    optionalDependencies:
-      rollup: 4.30.0
-
-  '@rollup/pluginutils@5.1.4(rollup@3.29.5)':
-    dependencies:
-      '@types/estree': 1.0.6
-      estree-walker: 2.0.2
-      picomatch: 4.0.2
-    optionalDependencies:
-      rollup: 3.29.5
->>>>>>> 35d592c (polar nuxt)
 
   '@rollup/plugin-alias@5.1.1(rollup@3.29.5)':
     optionalDependencies:
@@ -8078,11 +7886,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-<<<<<<< HEAD
   '@sinclair/typebox@0.34.13': {}
-=======
-  '@sindresorhus/merge-streams@2.3.0': {}
->>>>>>> 35d592c (polar nuxt)
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
@@ -8580,14 +8384,10 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-<<<<<<< HEAD
   '@web3-storage/multipart-parser@1.0.0': {}
 
   '@zxing/text-encoding@0.9.0':
     optional: true
-=======
-  abbrev@2.0.0: {}
->>>>>>> 35d592c (polar nuxt)
 
   abbrev@2.0.0: {}
 
@@ -8827,6 +8627,7 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   buffer-from@1.1.2: {}
 
 =======
@@ -8834,6 +8635,8 @@ snapshots:
 >>>>>>> a768c4b (polar nuxt)
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001692
@@ -8854,7 +8657,12 @@ snapshots:
   buffer-from@1.1.2: {}
 
 =======
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001692
@@ -8868,11 +8676,14 @@ snapshots:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
 =======
+=======
+>>>>>>> 6882d38 (fix lockfile)
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 =======
@@ -8889,7 +8700,12 @@ snapshots:
 
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   buffer@6.0.3:
     dependencies:
       base64-js: 1.5.1
@@ -8902,6 +8718,7 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 35d592c (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
@@ -8912,6 +8729,8 @@ snapshots:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 >>>>>>> 35d592c (polar nuxt)
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
@@ -8919,7 +8738,12 @@ snapshots:
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   bundle-require@5.1.0(esbuild@0.24.2):
     dependencies:
       esbuild: 0.24.2
@@ -9154,15 +8978,23 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   crossws@0.3.1:
     dependencies:
       uncrypto: 0.1.3
@@ -9245,6 +9077,7 @@ snapshots:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -9253,94 +9086,21 @@ snapshots:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
   data-uri-to-buffer@3.0.1: {}
 =======
-  crossws@0.3.1:
-    dependencies:
-      uncrypto: 0.1.3
-
-  css-declaration-sorter@7.2.0(postcss@8.4.49):
-    dependencies:
-      postcss: 8.4.49
-
-  css-select@5.1.0:
-    dependencies:
-      boolbase: 1.0.0
-      css-what: 6.1.0
-      domhandler: 5.0.3
-      domutils: 3.2.2
-      nth-check: 2.1.1
-
-  css-tree@2.2.1:
-    dependencies:
-      mdn-data: 2.0.28
-      source-map-js: 1.2.1
-
-  css-tree@2.3.1:
-    dependencies:
-      mdn-data: 2.0.30
-      source-map-js: 1.2.1
-
-  css-what@6.1.0: {}
-
-  cssesc@3.0.0: {}
-
-  cssnano-preset-default@7.0.6(postcss@8.4.49):
-    dependencies:
-      browserslist: 4.24.4
-      css-declaration-sorter: 7.2.0(postcss@8.4.49)
-      cssnano-utils: 5.0.0(postcss@8.4.49)
-      postcss: 8.4.49
-      postcss-calc: 10.1.0(postcss@8.4.49)
-      postcss-colormin: 7.0.2(postcss@8.4.49)
-      postcss-convert-values: 7.0.4(postcss@8.4.49)
-      postcss-discard-comments: 7.0.3(postcss@8.4.49)
-      postcss-discard-duplicates: 7.0.1(postcss@8.4.49)
-      postcss-discard-empty: 7.0.0(postcss@8.4.49)
-      postcss-discard-overridden: 7.0.0(postcss@8.4.49)
-      postcss-merge-longhand: 7.0.4(postcss@8.4.49)
-      postcss-merge-rules: 7.0.4(postcss@8.4.49)
-      postcss-minify-font-values: 7.0.0(postcss@8.4.49)
-      postcss-minify-gradients: 7.0.0(postcss@8.4.49)
-      postcss-minify-params: 7.0.2(postcss@8.4.49)
-      postcss-minify-selectors: 7.0.4(postcss@8.4.49)
-      postcss-normalize-charset: 7.0.0(postcss@8.4.49)
-      postcss-normalize-display-values: 7.0.0(postcss@8.4.49)
-      postcss-normalize-positions: 7.0.0(postcss@8.4.49)
-      postcss-normalize-repeat-style: 7.0.0(postcss@8.4.49)
-      postcss-normalize-string: 7.0.0(postcss@8.4.49)
-      postcss-normalize-timing-functions: 7.0.0(postcss@8.4.49)
-      postcss-normalize-unicode: 7.0.2(postcss@8.4.49)
-      postcss-normalize-url: 7.0.0(postcss@8.4.49)
-      postcss-normalize-whitespace: 7.0.0(postcss@8.4.49)
-      postcss-ordered-values: 7.0.1(postcss@8.4.49)
-      postcss-reduce-initial: 7.0.2(postcss@8.4.49)
-      postcss-reduce-transforms: 7.0.0(postcss@8.4.49)
-      postcss-svgo: 7.0.1(postcss@8.4.49)
-      postcss-unique-selectors: 7.0.3(postcss@8.4.49)
-
-  cssnano-utils@5.0.0(postcss@8.4.49):
-    dependencies:
-      postcss: 8.4.49
-
-  cssnano@7.0.6(postcss@8.4.49):
-    dependencies:
-      cssnano-preset-default: 7.0.6(postcss@8.4.49)
-      lilconfig: 3.1.3
-      postcss: 8.4.49
-
-  csso@5.0.5:
-    dependencies:
-      css-tree: 2.2.1
-
-  csstype@3.1.3: {}
->>>>>>> 35d592c (polar nuxt)
+>>>>>>> 6882d38 (fix lockfile)
+=======
+>>>>>>> 3baad08 (fix lockfile)
+  data-uri-to-buffer@3.0.1: {}
 
   data-view-buffer@1.0.1:
     dependencies:
@@ -9472,6 +9232,7 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   dotenv@16.4.7: {}
 
@@ -9479,6 +9240,8 @@ snapshots:
 =======
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
   dotenv@16.4.7: {}
 
 =======
@@ -9494,17 +9257,19 @@ snapshots:
 
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+  dotenv@16.4.7: {}
+
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   dunder-proto@1.0.1:
     dependencies:
       call-bind-apply-helpers: 1.0.1
       es-errors: 1.3.0
       gopd: 1.2.0
-=======
-  dotenv@16.4.7: {}
-
-  duplexer@0.1.2: {}
->>>>>>> 35d592c (polar nuxt)
 
   duplexer@0.1.2: {}
 
@@ -9516,6 +9281,7 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   electron-to-chromium@1.5.80: {}
 
@@ -9523,6 +9289,8 @@ snapshots:
 =======
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
   electron-to-chromium@1.5.80: {}
 
 =======
@@ -9538,7 +9306,14 @@ snapshots:
 
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+  electron-to-chromium@1.5.80: {}
+
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   elysia@1.2.10(@sinclair/typebox@0.34.13)(typescript@5.7.2):
     dependencies:
       '@sinclair/typebox': 0.34.13
@@ -9546,9 +9321,6 @@ snapshots:
       memoirist: 0.2.0
     optionalDependencies:
       typescript: 5.7.2
-=======
-  electron-to-chromium@1.5.80: {}
->>>>>>> 35d592c (polar nuxt)
 
   emoji-regex@8.0.0: {}
 
@@ -9886,12 +9658,15 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9904,7 +9679,12 @@ snapshots:
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   events@3.3.0: {}
 
   execa@7.2.0:
@@ -9934,6 +9714,7 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 35d592c (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
@@ -9944,6 +9725,8 @@ snapshots:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 >>>>>>> 35d592c (polar nuxt)
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
@@ -9951,7 +9734,12 @@ snapshots:
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   expect-type@1.1.0: {}
 
   express@4.21.2:
@@ -10162,7 +9950,6 @@ snapshots:
       has-symbols: 1.0.3
       hasown: 2.0.2
 
-<<<<<<< HEAD
   get-intrinsic@1.2.7:
     dependencies:
       call-bind-apply-helpers: 1.0.1
@@ -10182,13 +9969,6 @@ snapshots:
     dependencies:
       dunder-proto: 1.0.1
       es-object-atoms: 1.0.0
-=======
-  get-port-please@3.1.2: {}
-
-  get-stream@6.0.1: {}
-
-  get-stream@8.0.1: {}
->>>>>>> 35d592c (polar nuxt)
 
   get-stream@6.0.1: {}
 
@@ -10457,6 +10237,7 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   iron-webcrypto@1.2.1: {}
 
@@ -10464,6 +10245,8 @@ snapshots:
 =======
 =======
 >>>>>>> 190a37e (update lock file)
+=======
+>>>>>>> 6882d38 (fix lockfile)
   iron-webcrypto@1.2.1: {}
 
 =======
@@ -10479,14 +10262,18 @@ snapshots:
 
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+  iron-webcrypto@1.2.1: {}
+
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   is-arguments@1.2.0:
     dependencies:
       call-bound: 1.0.3
       has-tostringtag: 1.0.2
-=======
-  iron-webcrypto@1.2.1: {}
->>>>>>> 35d592c (polar nuxt)
 
   is-array-buffer@3.0.4:
     dependencies:
@@ -10848,15 +10635,23 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   magicast@0.3.5:
     dependencies:
       '@babel/parser': 7.26.5
@@ -10865,6 +10660,7 @@ snapshots:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -10873,24 +10669,21 @@ snapshots:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
   math-intrinsics@1.1.0: {}
 =======
-  magicast@0.3.5:
-    dependencies:
-      '@babel/parser': 7.26.5
-      '@babel/types': 7.26.5
-      source-map-js: 1.2.1
-
-  mdn-data@2.0.28: {}
-
-  mdn-data@2.0.30: {}
->>>>>>> 35d592c (polar nuxt)
+>>>>>>> 6882d38 (fix lockfile)
+=======
+>>>>>>> 3baad08 (fix lockfile)
+  math-intrinsics@1.1.0: {}
 
   mdn-data@2.0.28: {}
 
@@ -12646,45 +12439,7 @@ snapshots:
 
   undici-types@6.19.8: {}
 
-<<<<<<< HEAD
   undici@6.21.0: {}
-=======
-  unenv@1.10.0:
-    dependencies:
-      consola: 3.3.3
-      defu: 6.1.4
-      mime: 3.0.0
-      node-fetch-native: 1.6.4
-      pathe: 1.1.2
-
-  unhead@1.11.15:
-    dependencies:
-      '@unhead/dom': 1.11.15
-      '@unhead/schema': 1.11.15
-      '@unhead/shared': 1.11.15
-      hookable: 5.5.3
-
-  unicorn-magic@0.1.0: {}
-
-  unimport@3.14.5(rollup@4.30.0):
-    dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.30.0)
-      acorn: 8.14.0
-      escape-string-regexp: 5.0.0
-      estree-walker: 3.0.3
-      fast-glob: 3.3.2
-      local-pkg: 0.5.1
-      magic-string: 0.30.17
-      mlly: 1.7.3
-      pathe: 1.1.2
-      picomatch: 4.0.2
-      pkg-types: 1.3.0
-      scule: 1.3.0
-      strip-literal: 2.1.1
-      unplugin: 1.16.1
-    transitivePeerDependencies:
-      - rollup
->>>>>>> 35d592c (polar nuxt)
 
   unenv@1.10.0:
     dependencies:
@@ -12825,21 +12580,30 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   urlpattern-polyfill@8.0.2: {}
 
   util-deprecate@1.0.2: {}
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -12848,12 +12612,19 @@ snapshots:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   util@0.12.5:
     dependencies:
       inherits: 2.0.4
@@ -12861,11 +12632,6 @@ snapshots:
       is-generator-function: 1.0.10
       is-typed-array: 1.1.13
       which-typed-array: 1.1.15
-=======
-  urlpattern-polyfill@8.0.2: {}
-
-  util-deprecate@1.0.2: {}
->>>>>>> 35d592c (polar nuxt)
 
   utils-merge@1.0.1: {}
 
@@ -13142,15 +12908,23 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 =======
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   vue@3.5.13(typescript@5.7.2):
     dependencies:
       '@vue/compiler-dom': 3.5.13
@@ -13163,6 +12937,7 @@ snapshots:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
@@ -13171,12 +12946,19 @@ snapshots:
 >>>>>>> a768c4b (polar nuxt)
 =======
 =======
+>>>>>>> 6882d38 (fix lockfile)
+=======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
 >>>>>>> ebd7948 (update lock file)
+<<<<<<< HEAD
 >>>>>>> 190a37e (update lock file)
+=======
+=======
+>>>>>>> 3baad08 (fix lockfile)
+>>>>>>> 6882d38 (fix lockfile)
   web-encoding@1.1.5:
     dependencies:
       util: 0.12.5
@@ -13184,19 +12966,6 @@ snapshots:
       '@zxing/text-encoding': 0.9.0
 
   web-streams-polyfill@3.3.3: {}
-=======
-  vue@3.5.13(typescript@5.7.2):
-    dependencies:
-      '@vue/compiler-dom': 3.5.13
-      '@vue/compiler-sfc': 3.5.13
-      '@vue/runtime-dom': 3.5.13
-      '@vue/server-renderer': 3.5.13(vue@3.5.13(typescript@5.7.2))
-      '@vue/shared': 3.5.13
-    optionalDependencies:
-      typescript: 5.7.2
-
-  webidl-conversions@3.0.1: {}
->>>>>>> 35d592c (polar nuxt)
 
   webidl-conversions@3.0.1: {}
 
