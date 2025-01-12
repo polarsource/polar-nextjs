@@ -235,10 +235,21 @@ importers:
       tsup:
         specifier: ^8.3.5
 <<<<<<< HEAD
+<<<<<<< HEAD
         version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(postcss@8.4.49)(typescript@5.7.2)
 =======
         version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
 >>>>>>> 36b96ee (update lock file)
+=======
+        version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
+=======
+<<<<<<< HEAD
+        version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(postcss@8.4.49)(typescript@5.7.2)
+=======
+        version: 8.3.5(@microsoft/api-extractor@7.43.0(@types/node@20.17.12))(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.2)(yaml@2.7.0)
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@20.17.12)(terser@5.37.0)
@@ -1443,9 +1454,16 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   '@redocly/ajv@8.11.2':
     resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
 
@@ -1457,12 +1475,21 @@ packages:
     engines: {node: '>=14.19.0', npm: '>=7.0.0'}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   '@remix-run/node@2.15.2':
     resolution: {integrity: sha512-NS/h5uxje7DYCNgcKqKAiUhf0r2HVnoYUBWLyIIMmCUP1ddWurBP6xTPcWzGhEvV/EvguniYi1wJZ5+X8sonWw==}
     engines: {node: '>=18.0.0'}
@@ -2370,12 +2397,15 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+>>>>>>> 190a37e (update lock file)
   browserslist@4.24.4:
     resolution: {integrity: sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
@@ -2389,6 +2419,8 @@ packages:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
 =======
+=======
+>>>>>>> ebd7948 (update lock file)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -2409,11 +2441,31 @@ packages:
   buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+=======
+  browserslist@4.24.4:
+    resolution: {integrity: sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==}
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+
+  buffer-crc32@1.0.0:
+    resolution: {integrity: sha512-Db1SbgBS/fg/392AblrMJk97KggmvYhr4pB5ZIMTWtaivCPMWLkmb7m21cJvpvgK+J3nsU2CmmixNBZx4vFj/w==}
+    engines: {node: '>=8.0.0'}
+
+  buffer-from@1.1.2:
+    resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
+
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   buffer@6.0.3:
     resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
 
@@ -2423,6 +2475,7 @@ packages:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 35d592c (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
@@ -2431,6 +2484,16 @@ packages:
 >>>>>>> 35d592c (polar nuxt)
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+>>>>>>> 35d592c (polar nuxt)
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 35d592c (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   bundle-require@5.1.0:
     resolution: {integrity: sha512-3WrrOuZiyaaZPWiEt4G3+IffISVC9HYlWueJEBWED4ZH4aIAC2PnkdnuRrR94M+w6yGWn4AglWtJtBI8YqvgoA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -2682,9 +2745,16 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   crossws@0.3.1:
     resolution: {integrity: sha512-HsZgeVYaG+b5zA+9PbIPGq4+J/CJynJuearykPsXx4V/eMhyQ5EDVg3Ak2FBZtVXCiOLu/U7IiwDHTr9MA+IKw==}
 
@@ -2740,12 +2810,21 @@ packages:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   data-uri-to-buffer@3.0.1:
     resolution: {integrity: sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==}
     engines: {node: '>= 6'}
@@ -2982,13 +3061,21 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   dotenv@16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
@@ -2996,6 +3083,14 @@ packages:
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
@@ -3020,19 +3115,33 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   electron-to-chromium@1.5.80:
     resolution: {integrity: sha512-LTrKpW0AqIuHwmlVNV+cjFYTnXtM9K37OGhpe0ZI10ScPSxqVSryZHIY3WnCS5NSYbBODRTZyhRMS2h5FAEqAw==}
 
 >>>>>>> 36b96ee (update lock file)
 =======
+=======
+>>>>>>> 190a37e (update lock file)
   electron-to-chromium@1.5.80:
     resolution: {integrity: sha512-LTrKpW0AqIuHwmlVNV+cjFYTnXtM9K37OGhpe0ZI10ScPSxqVSryZHIY3WnCS5NSYbBODRTZyhRMS2h5FAEqAw==}
 
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+  electron-to-chromium@1.5.80:
+    resolution: {integrity: sha512-LTrKpW0AqIuHwmlVNV+cjFYTnXtM9K37OGhpe0ZI10ScPSxqVSryZHIY3WnCS5NSYbBODRTZyhRMS2h5FAEqAw==}
+
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   elysia@1.2.10:
     resolution: {integrity: sha512-QcNl2FjhHFRpKaqy1NoMpyCjJ7OcKBnHwLUkqGu09QwIV84PFb82ILvYJG4GS1RbGv76OA50luaqBLrM3SLZ2w==}
     peerDependencies:
@@ -3246,15 +3355,26 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
+>>>>>>> 190a37e (update lock file)
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 7ce4aa8 (polar nuxt)
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   events@3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
     engines: {node: '>=0.8.x'}
@@ -3269,6 +3389,7 @@ packages:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 35d592c (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
@@ -3277,6 +3398,16 @@ packages:
 >>>>>>> 35d592c (polar nuxt)
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+>>>>>>> 35d592c (polar nuxt)
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 35d592c (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   expect-type@1.1.0:
     resolution: {integrity: sha512-bFi65yM+xZgk+u/KRIpekdSYkTB5W1pEf0Lt8Q8Msh7b+eQ7LXVtIB1Bkm4fvclDEL1b2CZkMhv2mOeF8tMdkA==}
     engines: {node: '>=12.0.0'}
@@ -3714,19 +3845,33 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
 >>>>>>> 36b96ee (update lock file)
 =======
+=======
+>>>>>>> 190a37e (update lock file)
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+  iron-webcrypto@1.2.1:
+    resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
+
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   is-arguments@1.2.0:
     resolution: {integrity: sha512-7bVbi0huj/wrIAOzb8U1aszg9kdi3KN/CyU19CTI7tAoZYEZoL9yCDXpbXN+uPsuWnP02cyug1gleqq+TU+YCA==}
     engines: {node: '>= 0.4'}
@@ -4120,19 +4265,33 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
 >>>>>>> 36b96ee (update lock file)
 =======
+=======
+>>>>>>> 190a37e (update lock file)
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+  magicast@0.3.5:
+    resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
+
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -5790,9 +5949,16 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   urlpattern-polyfill@8.0.2:
     resolution: {integrity: sha512-Qp95D4TPJl1kC9SKigDcqgyM2VDVO4RiJc2d4qe5GrYm+zbIQCWWKAFaJNQ4BhdFeDGwBmAxqJBwWSJDb9T3BQ==}
 
@@ -5800,12 +5966,21 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   util@0.12.5:
     resolution: {integrity: sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA==}
 =======
@@ -6048,9 +6223,16 @@ packages:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   vue@3.5.13:
     resolution: {integrity: sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==}
     peerDependencies:
@@ -6060,12 +6242,21 @@ packages:
         optional: true
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   web-encoding@1.1.5:
     resolution: {integrity: sha512-HYLeVCdJ0+lBYV2FvNZmv3HJ2Nt0QYXqZojk3d9FJOLkwnuhzM9tmamh8d7HPM8QqjKH8DeHkFTx+CFlWpZZDA==}
 
@@ -7427,9 +7618,16 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   '@redocly/ajv@8.11.2':
     dependencies:
       fast-deep-equal: 3.1.3
@@ -7456,12 +7654,21 @@ snapshots:
       - supports-color
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   '@remix-run/node@2.15.2(typescript@5.7.2)':
     dependencies:
       '@remix-run/server-runtime': 2.15.2(typescript@5.7.2)
@@ -8619,11 +8826,14 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   buffer-from@1.1.2: {}
 
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+>>>>>>> 190a37e (update lock file)
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001692
@@ -8636,6 +8846,8 @@ snapshots:
   buffer-from@1.1.2: {}
 
 =======
+=======
+>>>>>>> ebd7948 (update lock file)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -8654,11 +8866,30 @@ snapshots:
 
   buffer-from@1.1.2: {}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+=======
+  browserslist@4.24.4:
+    dependencies:
+      caniuse-lite: 1.0.30001692
+      electron-to-chromium: 1.5.80
+      node-releases: 2.0.19
+      update-browserslist-db: 1.1.2(browserslist@4.24.4)
+
+  buffer-crc32@1.0.0: {}
+
+  buffer-from@1.1.2: {}
+
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   buffer@6.0.3:
     dependencies:
       base64-js: 1.5.1
@@ -8670,6 +8901,7 @@ snapshots:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 35d592c (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
@@ -8678,6 +8910,16 @@ snapshots:
 >>>>>>> 35d592c (polar nuxt)
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+>>>>>>> 35d592c (polar nuxt)
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 35d592c (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   bundle-require@5.1.0(esbuild@0.24.2):
     dependencies:
       esbuild: 0.24.2
@@ -8911,9 +9153,16 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   crossws@0.3.1:
     dependencies:
       uncrypto: 0.1.3
@@ -8995,12 +9244,21 @@ snapshots:
   csstype@3.1.3: {}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   data-uri-to-buffer@3.0.1: {}
 =======
   crossws@0.3.1:
@@ -9213,17 +9471,30 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   dotenv@16.4.7: {}
 
 >>>>>>> 36b96ee (update lock file)
 =======
+=======
+>>>>>>> 190a37e (update lock file)
   dotenv@16.4.7: {}
 
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+  dotenv@16.4.7: {}
+
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   dunder-proto@1.0.1:
     dependencies:
       call-bind-apply-helpers: 1.0.1
@@ -9244,17 +9515,30 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   electron-to-chromium@1.5.80: {}
 
 >>>>>>> 36b96ee (update lock file)
 =======
+=======
+>>>>>>> 190a37e (update lock file)
   electron-to-chromium@1.5.80: {}
 
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+  electron-to-chromium@1.5.80: {}
+
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   elysia@1.2.10(@sinclair/typebox@0.34.13)(typescript@5.7.2):
     dependencies:
       '@sinclair/typebox': 0.34.13
@@ -9601,15 +9885,26 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
+>>>>>>> 190a37e (update lock file)
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 7ce4aa8 (polar nuxt)
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   events@3.3.0: {}
 
   execa@7.2.0:
@@ -9638,6 +9933,7 @@ snapshots:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 35d592c (polar nuxt)
 =======
 >>>>>>> 36b96ee (update lock file)
@@ -9646,6 +9942,16 @@ snapshots:
 >>>>>>> 35d592c (polar nuxt)
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+>>>>>>> 35d592c (polar nuxt)
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 35d592c (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   expect-type@1.1.0: {}
 
   express@4.21.2:
@@ -10150,17 +10456,30 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   iron-webcrypto@1.2.1: {}
 
 >>>>>>> 36b96ee (update lock file)
 =======
+=======
+>>>>>>> 190a37e (update lock file)
   iron-webcrypto@1.2.1: {}
 
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
+<<<<<<< HEAD
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+  iron-webcrypto@1.2.1: {}
+
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   is-arguments@1.2.0:
     dependencies:
       call-bound: 1.0.3
@@ -10528,9 +10847,16 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   magicast@0.3.5:
     dependencies:
       '@babel/parser': 7.26.5
@@ -10538,12 +10864,21 @@ snapshots:
       source-map-js: 1.2.1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   math-intrinsics@1.1.0: {}
 =======
   magicast@0.3.5:
@@ -12489,13 +12824,21 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   urlpattern-polyfill@8.0.2: {}
 
   util-deprecate@1.0.2: {}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
@@ -12503,6 +12846,14 @@ snapshots:
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   util@0.12.5:
     dependencies:
       inherits: 2.0.4
@@ -12790,9 +13141,16 @@ snapshots:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   vue@3.5.13(typescript@5.7.2):
     dependencies:
       '@vue/compiler-dom': 3.5.13
@@ -12804,12 +13162,21 @@ snapshots:
       typescript: 5.7.2
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 36b96ee (update lock file)
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7ce4aa8 (polar nuxt)
 >>>>>>> a768c4b (polar nuxt)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7ce4aa8 (polar nuxt)
+=======
+>>>>>>> 36b96ee (update lock file)
+>>>>>>> ebd7948 (update lock file)
+>>>>>>> 190a37e (update lock file)
   web-encoding@1.1.5:
     dependencies:
       util: 0.12.5
