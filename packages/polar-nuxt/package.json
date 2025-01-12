@@ -1,0 +1,40 @@
+{
+  "name": "@polar-sh/nuxt",
+  "version": "0.1.0",
+  "description": "Polar.sh integration for Nuxt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polar-sh/polar.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "prepack": "nuxt-module-build"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.10.0",
+    "@polar-sh/sdk": "^0.20.0"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^0.8.4",
+    "@nuxt/schema": "^3.15.1",
+    "@types/node": "^20.11.0",
+    "nuxi": "^3.20.0",
+    "nuxt": "^3.15.1"
+  }
+}

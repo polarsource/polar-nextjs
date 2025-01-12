@@ -36,3 +36,11 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# Nuxt
+package-lock.json
+.nuxt
+.output
+.idea/
+playground/.nuxtrc
+.temp*
