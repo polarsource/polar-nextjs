@@ -2,7 +2,7 @@
 
 Payments and Checkouts made dead simple with Sveltekit.
 
-`pnpm install @polar-sh/sveltekit`
+`pnpm install @polar-sh/sveltekit zod`
 
 ## Checkout
 

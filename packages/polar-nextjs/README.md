@@ -2,7 +2,7 @@
 
 Payments and Checkouts made dead simple with Next.js.
 
-`pnpm install @polar-sh/nextjs`
+`pnpm install @polar-sh/nextjs zod`
 
 ## Checkout
 

@@ -1,18 +1,18 @@
-# @polar-sh/hono
+# @polar-sh/elysia
 
-Payments and Checkouts made dead simple with Hono.
+Payments and Checkouts made dead simple with Elysia.
 
-`pnpm install @polar-sh/hono zod`
+`pnpm install @polar-sh/elysia zod`
 
 ## Checkout
 
 Create a Checkout handler which takes care of redirections.
 
 ```typescript
-import { Hono } from 'hono'
-import { Checkout } from "@polar-sh/hono";
+import { Elysia } from 'elysia'
+import { Checkout } from "@polar-sh/elysia";
 
-const app = new Hono();
+const app = new Elysia();
 
 app.get('/checkout', Checkout({
   accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
@@ -35,10 +35,10 @@ Pass query params to this route.
 Create a customer portal where your customer can view orders and subscriptions.
 
 ```typescript
-import { Hono } from 'hono'
-import { CustomerPortal } from "@polar-sh/hono";
+import { Elysia } from 'elysia'
+import { CustomerPortal } from "@polar-sh/elysia";
 
-const app = new Hono()
+const app = new Elysia()
 
 app.get('/portal', CustomerPortal({
   accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
@@ -52,10 +52,10 @@ app.get('/portal', CustomerPortal({
 A simple utility which resolves incoming webhook payloads by signing the webhook secret properly.
 
 ```typescript
-import { Hono } from 'hono'
-import { Webhooks } from "@polar-sh/hono";
+import { Elysia } from 'elysia'
+import { Webhooks } from "@polar-sh/elysia";
 
-const app = new Hono()
+const app = new Elysia()
 
 app.post('/polar/webhooks', Webhooks({
   webhookSecret: process.env.POLAR_WEBHOOK_SECRET!,

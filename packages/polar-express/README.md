@@ -2,7 +2,7 @@
 
 Payments and Checkouts made dead simple with Express.
 
-`pnpm install @polar-sh/express`
+`pnpm install @polar-sh/express zod`
 
 ## Checkout
 
