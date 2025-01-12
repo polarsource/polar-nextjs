@@ -1,6 +1,6 @@
 import { Polar } from "@polar-sh/sdk";
-import {  Context } from "elysia";
-import { InlineHandler } from "elysia/dist/types";
+import type { Context } from "elysia";
+import type { InlineHandler } from "elysia/dist/types";
 
 export interface CheckoutConfig {
 	accessToken?: string;
@@ -59,13 +59,11 @@ export const Checkout = ({
 					? JSON.parse(url.searchParams.get("metadata") ?? "{}")
 					: undefined,
 			});
-			
+
 			return ctx.redirect(result.url);
 		} catch (error) {
 			console.error(error);
-			return { error: "Internal server error" }
+			return { error: "Internal server error" };
 		}
-
-		return { error: "Internal server error" }
 	};
 };

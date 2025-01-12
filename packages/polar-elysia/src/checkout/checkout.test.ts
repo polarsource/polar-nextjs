@@ -26,7 +26,7 @@ vi.mock("@polar-sh/sdk", async (importOriginal) => {
 	};
 });
 
-import {Elysia} from "elysia";
+import { Elysia } from "elysia";
 import { describe, expect, it, vi } from "vitest";
 import { Checkout } from "./checkout";
 
@@ -40,10 +40,12 @@ describe("Checkout middleware", () => {
 			}),
 		);
 
-		const response = await app.handle(new Request('http://localhost/?productId=mock-product-id'))
-	
-		expect(response.status).toBe(302)
-		expect(response.headers.get('location')).toBe(mockCheckoutUrl)
+		const response = await app.handle(
+			new Request("http://localhost/?productId=mock-product-id"),
+		);
+
+		expect(response.status).toBe(302);
+		expect(response.headers.get("location")).toBe(mockCheckoutUrl);
 	});
 
 	it("should return 400 when productId is not defined", async () => {
@@ -55,9 +57,11 @@ describe("Checkout middleware", () => {
 			}),
 		);
 
-		const response = await app.handle(new Request('http://localhost/'))
+		const response = await app.handle(new Request("http://localhost/"));
 
-		expect(response.status).toBe(400)
-		expect(await response.json()).toEqual({ error: "Missing productId in query params" })
+		expect(response.status).toBe(400);
+		expect(await response.json()).toEqual({
+			error: "Missing productId in query params",
+		});
 	});
 });

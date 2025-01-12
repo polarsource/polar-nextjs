@@ -1,6 +1,6 @@
 import { Polar } from "@polar-sh/sdk";
-import { Context } from "elysia";
-import { InlineHandler } from "elysia/dist/types";
+import type { Context } from "elysia";
+import type { InlineHandler } from "elysia/dist/types";
 
 export interface CustomerPortalConfig {
 	accessToken?: string;
@@ -39,4 +39,3 @@ export const CustomerPortal = ({
 		}
 	};
 };
-

@@ -2,8 +2,8 @@ import {
 	WebhookVerificationError,
 	validateEvent,
 } from "@polar-sh/sdk/webhooks";
-import { InlineHandler } from "elysia/dist/types";
-import { Context } from "elysia";
+import type { Context } from "elysia";
+import type { InlineHandler } from "elysia/dist/types";
 
 export interface WebhooksConfig {
 	webhookSecret: string;
@@ -41,6 +41,6 @@ export const Webhooks = ({
 
 		await onPayload(webhookPayload);
 
-		return { received: true }
+		return { received: true };
 	};
 };
