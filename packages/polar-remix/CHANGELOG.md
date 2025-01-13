@@ -1,5 +1,11 @@
 # @polar-sh/hono
 
+## 0.2.1
+
+### Patch Changes
+
+- dda069d: Add granular webhook handlers
+
 ## 0.2.0
 
 ### Minor Changes

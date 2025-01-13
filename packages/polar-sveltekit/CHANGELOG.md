@@ -1,5 +1,11 @@
 # @polar-sh/sveltekit
 
+## 0.3.1
+
+### Patch Changes
+
+- dda069d: Add granular webhook handlers
+
 ## 0.3.0
 
 ### Minor Changes

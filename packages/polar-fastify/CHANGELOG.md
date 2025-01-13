@@ -1,5 +1,11 @@
 # @polar-sh/elysia
 
+## 0.1.3
+
+### Patch Changes
+
+- dda069d: Add granular webhook handlers
+
 ## 0.1.2
 
 ### Patch Changes
