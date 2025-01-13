@@ -44,7 +44,7 @@
     "vitest": "^2.1.8"
   },
   "dependencies": {
-    "@polar-sh/adapter-core": "workspace:*",
+    "@polar-sh/adapter-core": "^0.1.1",
     "@polar-sh/sdk": "^0.20.0"
   }
 }
