@@ -1,17 +1,17 @@
 import {
+	type WebhooksConfig,
+	handleWebhookPayload,
+} from "@polar-sh/adapter-core";
+import {
 	WebhookVerificationError,
 	validateEvent,
 } from "@polar-sh/sdk/webhooks";
 import type { Request, RequestHandler, Response } from "express";
 
-export interface WebhooksConfig {
-	webhookSecret: string;
-	onPayload: (payload: ReturnType<typeof validateEvent>) => Promise<void>;
-}
-
 export const Webhooks = ({
 	webhookSecret,
 	onPayload,
+	...eventHandlers
 }: WebhooksConfig): RequestHandler => {
 	return async (req: Request, res: Response) => {
 		const requestBody = JSON.stringify(req.body);
@@ -40,7 +40,11 @@ export const Webhooks = ({
 			return;
 		}
 
-		await onPayload(webhookPayload);
+		handleWebhookPayload(webhookPayload, {
+			webhookSecret,
+			onPayload,
+			...eventHandlers,
+		});
 
 		res.json({ received: true });
 	};

@@ -12,7 +12,7 @@ Create a Checkout handler which takes care of redirections.
 import { Checkout } from "@polar-sh/nuxt";
 
 const checkout = Checkout({
-  accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
+  accessToken: "xxx", // Or set an environment variable to POLAR_ACCESS_TOKEN
   successUrl: process.env.SUCCESS_URL,
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
 });
@@ -37,12 +37,12 @@ Create a customer portal where your customer can view orders and subscriptions.
 import { CustomerPortal } from "@polar-sh/nuxt";
 
 const customerPortal = CustomerPortal({
-  accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
+  accessToken: "xxx", // Or set an environment variable to POLAR_ACCESS_TOKEN
   getCustomerId: (event) => "", // Fuction to resolve a Polar Customer ID
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
-})
+});
 
-export default defineEventHandler(customerPortal)
+export default defineEventHandler(customerPortal);
 ```
 
 ## Webhooks
@@ -59,3 +59,24 @@ const webhooks = Webhooks({
 
 export default defineEventHandler(webhooks)
 ```
+
+#### Payload Handlers
+
+The Webhook handler also supports granular handlers for easy integration.
+
+- onCheckoutCreated: (payload) => 
+- onCheckoutUpdated: (payload) => 
+- onOrderCreated: (payload) => 
+- onSubscriptionCreated: (payload) => 
+- onSubscriptionUpdated: (payload) => 
+- onSubscriptionActive: (payload) => 
+- onSubscriptionCanceled: (payload) => 
+- onSubscriptionRevoked: (payload) => 
+- onProductCreated: (payload) => 
+- onProductUpdated: (payload) => 
+- onOrganizationUpdated: (payload) => 
+- onBenefitCreated: (payload) => 
+- onBenefitUpdated: (payload) => 
+- onBenefitGrantCreated: (payload) => 
+- onBenefitGrantUpdated: (payload) => 
+- onBenefitGrantRevoked: (payload) => 

@@ -4,17 +4,15 @@ import {
   validateEvent,
 } from "@polar-sh/sdk/webhooks";
 import type { RequestEvent } from "@sveltejs/kit";
-
+import {
+  type WebhooksConfig,
+  handleWebhookPayload,
+} from "@polar-sh/adapter-core";
 export interface CheckoutConfig {
   accessToken?: string;
   successUrl?: string;
   includeCheckoutId?: boolean;
   server?: "sandbox" | "production";
-}
-
-export interface WebhooksConfig {
-  webhookSecret: string;
-  onPayload: (payload: any) => Promise<void>;
 }
 
 export type CheckoutHandler = (event: RequestEvent) => Promise<Response>;
@@ -126,6 +124,7 @@ export const CustomerPortal = ({
 export const Webhooks = ({
   webhookSecret,
   onPayload,
+  ...eventHandlers
 }: WebhooksConfig): WebhookHandler => {
   return async (event: RequestEvent) => {
     const requestBody = await event.request.text();
@@ -152,7 +151,12 @@ export const Webhooks = ({
       throw error;
     }
 
-    await onPayload(webhookPayload);
+    handleWebhookPayload(webhookPayload, {
+      webhookSecret,
+      onPayload,
+      ...eventHandlers,
+    });
+
     return new Response(JSON.stringify({ received: true }), { status: 200 });
   };
 };

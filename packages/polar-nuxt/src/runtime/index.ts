@@ -1,20 +1,26 @@
+import {
+  handleWebhookPayload,
+  type WebhooksConfig,
+} from "@polar-sh/adapter-core";
 import { Polar } from "@polar-sh/sdk";
 import {
   WebhookVerificationError,
   validateEvent,
 } from "@polar-sh/sdk/webhooks";
-import { H3Event, getRequestURL, getHeader, sendRedirect, createError, readBody } from "h3";
+import {
+  H3Event,
+  getRequestURL,
+  getHeader,
+  sendRedirect,
+  createError,
+  readBody,
+} from "h3";
 
 export interface CheckoutConfig {
   accessToken?: string;
   successUrl?: string;
   includeCheckoutId?: boolean;
   server?: "sandbox" | "production";
-}
-
-export interface WebhooksConfig {
-  webhookSecret: string;
-  onPayload: (payload: any) => Promise<void>;
 }
 
 export interface CustomerPortalConfig {
@@ -120,7 +126,11 @@ export const CustomerPortal = ({
   };
 };
 
-export const Webhooks = ({ webhookSecret, onPayload }: WebhooksConfig) => {
+export const Webhooks = ({
+  webhookSecret,
+  onPayload,
+  ...eventHandlers
+}: WebhooksConfig) => {
   return async (event: H3Event) => {
     const requestBody = await readBody(event);
 
@@ -136,7 +146,7 @@ export const Webhooks = ({ webhookSecret, onPayload }: WebhooksConfig) => {
       webhookPayload = validateEvent(
         JSON.stringify(requestBody),
         webhookHeaders,
-        webhookSecret
+        webhookSecret,
       );
     } catch (error) {
       if (error instanceof WebhookVerificationError) {
@@ -145,7 +155,12 @@ export const Webhooks = ({ webhookSecret, onPayload }: WebhooksConfig) => {
       throw error;
     }
 
-    await onPayload(webhookPayload);
+    handleWebhookPayload(webhookPayload, {
+      webhookSecret,
+      onPayload,
+      ...eventHandlers,
+    });
+
     return { received: true };
   };
 };

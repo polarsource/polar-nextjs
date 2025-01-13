@@ -59,3 +59,24 @@ export const POST = Webhooks({
 	},
 });
 ```
+
+#### Payload Handlers
+
+The Webhook handler also supports granular handlers for easy integration.
+
+- onCheckoutCreated: (payload) => 
+- onCheckoutUpdated: (payload) => 
+- onOrderCreated: (payload) => 
+- onSubscriptionCreated: (payload) => 
+- onSubscriptionUpdated: (payload) => 
+- onSubscriptionActive: (payload) => 
+- onSubscriptionCanceled: (payload) => 
+- onSubscriptionRevoked: (payload) => 
+- onProductCreated: (payload) => 
+- onProductUpdated: (payload) => 
+- onOrganizationUpdated: (payload) => 
+- onBenefitCreated: (payload) => 
+- onBenefitUpdated: (payload) => 
+- onBenefitGrantCreated: (payload) => 
+- onBenefitGrantUpdated: (payload) => 
+- onBenefitGrantRevoked: (payload) => 

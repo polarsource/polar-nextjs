@@ -1,18 +1,18 @@
 import {
+	type WebhooksConfig,
+	handleWebhookPayload,
+} from "@polar-sh/adapter-core";
+import {
 	WebhookVerificationError,
 	validateEvent,
 } from "@polar-sh/sdk/webhooks";
 import type { Context } from "elysia";
 import type { InlineHandler } from "elysia/dist/types";
 
-export interface WebhooksConfig {
-	webhookSecret: string;
-	onPayload: (payload: ReturnType<typeof validateEvent>) => Promise<void>;
-}
-
 export const Webhooks = ({
 	webhookSecret,
 	onPayload,
+	...eventHandlers
 }: WebhooksConfig): InlineHandler => {
 	return async (ctx: Context) => {
 		const requestBody = await ctx.request.text();
@@ -39,7 +39,11 @@ export const Webhooks = ({
 			return ctx.error(500, { error: "Internal server error" });
 		}
 
-		await onPayload(webhookPayload);
+		handleWebhookPayload(webhookPayload, {
+			webhookSecret,
+			onPayload,
+			...eventHandlers,
+		});
 
 		return { received: true };
 	};

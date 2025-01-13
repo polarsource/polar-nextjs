@@ -1,10 +1,13 @@
+import {
+	type WebhooksConfig,
+	handleWebhookPayload,
+} from "@polar-sh/adapter-core";
 import { Polar } from "@polar-sh/sdk";
 import {
 	WebhookVerificationError,
 	validateEvent,
 } from "@polar-sh/sdk/webhooks";
 import type { Context } from "hono";
-
 export interface CheckoutConfig {
 	accessToken?: string;
 	successUrl?: string;
@@ -112,12 +115,11 @@ export const CustomerPortal = ({
 	};
 };
 
-export interface WebhooksConfig {
-	webhookSecret: string;
-	onPayload: (payload: ReturnType<typeof validateEvent>) => Promise<void>;
-}
-
-export const Webhooks = ({ webhookSecret, onPayload }: WebhooksConfig) => {
+export const Webhooks = ({
+	webhookSecret,
+	onPayload,
+	...eventHandlers
+}: WebhooksConfig) => {
 	return async (c: Context) => {
 		const requestBody = await c.req.text();
 
@@ -142,7 +144,11 @@ export const Webhooks = ({ webhookSecret, onPayload }: WebhooksConfig) => {
 			throw error;
 		}
 
-		await onPayload(webhookPayload);
+		handleWebhookPayload(webhookPayload, {
+			webhookSecret,
+			onPayload,
+			...eventHandlers,
+		});
 
 		return c.json({ received: true });
 	};

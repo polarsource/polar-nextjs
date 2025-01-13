@@ -44,7 +44,8 @@
     "vitest": "^2.1.8"
   },
   "dependencies": {
-    "@polar-sh/sdk": "^0.20.0"
+    "@polar-sh/adapter-core": "workspace:*",
+    "@polar-sh/sdk": "^0.20.2"
   },
   "peerDependencies": {
     "elysia": "^1.2.10"

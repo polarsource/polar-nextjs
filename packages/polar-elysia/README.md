@@ -9,16 +9,19 @@ Payments and Checkouts made dead simple with Elysia.
 Create a Checkout handler which takes care of redirections.
 
 ```typescript
-import { Elysia } from 'elysia'
+import { Elysia } from "elysia";
 import { Checkout } from "@polar-sh/elysia";
 
 const app = new Elysia();
 
-app.get('/checkout', Checkout({
-  accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
-  successUrl: process.env.SUCCESS_URL,
-  server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
-}));
+app.get(
+  "/checkout",
+  Checkout({
+    accessToken: "xxx", // Or set an environment variable to POLAR_ACCESS_TOKEN
+    successUrl: process.env.SUCCESS_URL,
+    server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
+  }),
+);
 ```
 
 ### Query Params
@@ -35,16 +38,19 @@ Pass query params to this route.
 Create a customer portal where your customer can view orders and subscriptions.
 
 ```typescript
-import { Elysia } from 'elysia'
+import { Elysia } from "elysia";
 import { CustomerPortal } from "@polar-sh/elysia";
 
-const app = new Elysia()
+const app = new Elysia();
 
-app.get('/portal', CustomerPortal({
-  accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
-  getCustomerId: (event) => "", // Fuction to resolve a Polar Customer ID
-  server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
-}))
+app.get(
+  "/portal",
+  CustomerPortal({
+    accessToken: "xxx", // Or set an environment variable to POLAR_ACCESS_TOKEN
+    getCustomerId: (event) => "", // Fuction to resolve a Polar Customer ID
+    server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
+  }),
+);
 ```
 
 ## Webhooks
@@ -62,3 +68,24 @@ app.post('/polar/webhooks', Webhooks({
   onPayload: async (payload) => /** Handle payload */,
 }))
 ```
+
+#### Payload Handlers
+
+The Webhook handler also supports granular handlers for easy integration.
+
+- onCheckoutCreated: (payload) => 
+- onCheckoutUpdated: (payload) => 
+- onOrderCreated: (payload) => 
+- onSubscriptionCreated: (payload) => 
+- onSubscriptionUpdated: (payload) => 
+- onSubscriptionActive: (payload) => 
+- onSubscriptionCanceled: (payload) => 
+- onSubscriptionRevoked: (payload) => 
+- onProductCreated: (payload) => 
+- onProductUpdated: (payload) => 
+- onOrganizationUpdated: (payload) => 
+- onBenefitCreated: (payload) => 
+- onBenefitUpdated: (payload) => 
+- onBenefitGrantCreated: (payload) => 
+- onBenefitGrantUpdated: (payload) => 
+- onBenefitGrantRevoked: (payload) => 
