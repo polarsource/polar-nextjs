@@ -1,5 +1,11 @@
 # @polar-sh/elysia
 
+## 0.1.5
+
+### Patch Changes
+
+- 98a1bf9: add core dependency
+
 ## 0.1.4
 
 ### Patch Changes

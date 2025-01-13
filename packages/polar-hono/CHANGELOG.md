@@ -1,5 +1,13 @@
 # @polar-sh/hono
 
+## 0.2.4
+
+### Patch Changes
+
+- 98a1bf9: add core dependency
+- Updated dependencies [98a1bf9]
+  - @polar-sh/adapter-core@0.1.3
+
 ## 0.2.3
 
 ### Patch Changes

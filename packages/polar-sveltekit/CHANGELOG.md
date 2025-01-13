@@ -1,5 +1,13 @@
 # @polar-sh/sveltekit
 
+## 0.3.4
+
+### Patch Changes
+
+- 98a1bf9: add core dependency
+- Updated dependencies [98a1bf9]
+  - @polar-sh/adapter-core@0.1.3
+
 ## 0.3.3
 
 ### Patch Changes

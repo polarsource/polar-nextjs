@@ -1,6 +1,6 @@
 {
   "name": "@polar-sh/nuxt",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Polar.sh integration for Nuxt",
   "private": true,
   "repository": {
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.10.0",
-    "@polar-sh/adapter-core": "^0.1.1",
+    "@polar-sh/adapter-core": "^0.1.3",
     "@polar-sh/sdk": "^0.20.0"
   },
   "devDependencies": {
