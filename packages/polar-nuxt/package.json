@@ -2,6 +2,7 @@
   "name": "@polar-sh/nuxt",
   "version": "0.1.0",
   "description": "Polar.sh integration for Nuxt",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/polar-sh/polar.git"
@@ -21,7 +22,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "exit 0 &&nuxt-module-build",
+    "build": "exit 0 && nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "prepack": "exit 0 && nuxt-module-build"
