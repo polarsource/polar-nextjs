@@ -1,5 +1,12 @@
 # polar-nextjs
 
+## 0.3.3
+
+### Patch Changes
+
+- Updated dependencies [4abbedc]
+  - @polar-sh/adapter-core@0.1.2
+
 ## 0.3.2
 
 ### Patch Changes
