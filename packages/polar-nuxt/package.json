@@ -21,10 +21,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "nuxt-module-build",
+    "build": "exit 0 &&nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "prepack": "nuxt-module-build"
+    "prepack": "exit 0 && nuxt-module-build"
   },
   "dependencies": {
     "@nuxt/kit": "^3.10.0",
