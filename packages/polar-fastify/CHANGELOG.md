@@ -1,5 +1,11 @@
 # @polar-sh/elysia
 
+## 0.1.1
+
+### Patch Changes
+
+- 38129ef: Init Fastify
+
 ## 0.1.2
 
 ### Patch Changes
