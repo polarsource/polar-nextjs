@@ -1,5 +1,13 @@
 # polar-nextjs
 
+## 0.3.2
+
+### Patch Changes
+
+- 46ad781: Await webhook handlers
+- Updated dependencies [46ad781]
+  - @polar-sh/adapter-core@0.1.1
+
 ## 0.3.1
 
 ### Patch Changes

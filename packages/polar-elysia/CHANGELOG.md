@@ -1,5 +1,13 @@
 # @polar-sh/elysia
 
+## 0.1.4
+
+### Patch Changes
+
+- 46ad781: Await webhook handlers
+- Updated dependencies [46ad781]
+  - @polar-sh/adapter-core@0.1.1
+
 ## 0.1.3
 
 ### Patch Changes

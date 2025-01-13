@@ -1,5 +1,13 @@
 # @polar-sh/hono
 
+## 0.2.2
+
+### Patch Changes
+
+- 46ad781: Await webhook handlers
+- Updated dependencies [46ad781]
+  - @polar-sh/adapter-core@0.1.1
+
 ## 0.2.1
 
 ### Patch Changes
