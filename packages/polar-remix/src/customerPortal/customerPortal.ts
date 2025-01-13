@@ -1,5 +1,5 @@
 import { Polar } from "@polar-sh/sdk";
-import { type LoaderFunction, redirect } from "@remix-run/node";
+import type { LoaderFunction } from "../types";
 
 export interface CustomerPortalConfig {
 	accessToken?: string;
@@ -34,7 +34,7 @@ export const CustomerPortal = ({
 				customerId,
 			});
 
-			return redirect(result.customerPortalUrl);
+			return Response.redirect(result.customerPortalUrl);
 		} catch (error) {
 			console.error(error);
 			return Response.json({ error: "Internal server error" }, { status: 500 });

@@ -2,7 +2,7 @@ import {
 	WebhookVerificationError,
 	validateEvent,
 } from "@polar-sh/sdk/webhooks";
-import type { ActionFunction } from "@remix-run/node";
+import type { ActionFunction } from "../types";
 
 export interface WebhooksConfig {
 	webhookSecret: string;

@@ -1,6 +1,6 @@
 # @polar-sh/remix
 
-Payments and Checkouts made dead simple with Remix.
+Payments and Checkouts made dead simple with Remi and React Router.
 
 `pnpm install @polar-sh/remix zod`
 
@@ -12,10 +12,10 @@ Create a Checkout handler which takes care of redirections.
 import { Checkout } from "@polar-sh/remix";
 
 export const loader = Checkout({
-  accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
+  accessToken: "xxx", // Or set an environment variable to POLAR_ACCESS_TOKEN
   successUrl: process.env.SUCCESS_URL,
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
-})
+});
 ```
 
 ### Query Params
@@ -35,10 +35,10 @@ Create a customer portal where your customer can view orders and subscriptions.
 import { CustomerPortal } from "@polar-sh/remix";
 
 export const loader = CustomerPortal({
-  accessToken: 'xxx', // Or set an environment variable to POLAR_ACCESS_TOKEN
+  accessToken: "xxx", // Or set an environment variable to POLAR_ACCESS_TOKEN
   getCustomerId: (event) => "", // Fuction to resolve a Polar Customer ID
   server: "sandbox", // Use sandbox if you're testing Polar - omit the parameter or pass 'production' otherwise
-})
+});
 ```
 
 ## Webhooks
@@ -46,7 +46,7 @@ export const loader = CustomerPortal({
 A simple utility which resolves incoming webhook payloads by signing the webhook secret properly.
 
 ```typescript
-import { Webhooks } from "@polar-sh/remix";
+import { Webhooks } from '@polar-sh/remix';
 
 export const action = Webhooks({
   webhookSecret: process.env.POLAR_WEBHOOK_SECRET!,

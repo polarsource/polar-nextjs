@@ -1,5 +1,5 @@
 import { Polar } from "@polar-sh/sdk";
-import { type LoaderFunction, redirect } from "@remix-run/node";
+import type { LoaderFunction } from "../types";
 
 export interface CheckoutConfig {
 	accessToken?: string;
@@ -62,7 +62,7 @@ export const Checkout = ({
 					: undefined,
 			});
 
-			return redirect(result.url);
+			return Response.redirect(result.url);
 		} catch (error) {
 			console.error(error);
 			return Response.json({ error: "Internal server error" }, { status: 500 });

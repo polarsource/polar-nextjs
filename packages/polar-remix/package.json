@@ -1,7 +1,7 @@
 {
   "name": "@polar-sh/remix",
   "version": "0.1.1",
-  "description": "Polar integration for Remix",
+  "description": "Polar integration for Remix and React Router",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -31,15 +31,12 @@
   "keywords": [
     "polar",
     "remix",
+    "react-router",
     "payments",
     "subscriptions"
   ],
-  "peerDependencies": {
-    "@remix-run/node": "^2.15.2"
-  },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@remix-run/node": "^2.15.2",
     "@sindresorhus/tsconfig": "^7.0.0",
     "@types/node": "^20.0.0",
     "prettier": "^3.2.5",
