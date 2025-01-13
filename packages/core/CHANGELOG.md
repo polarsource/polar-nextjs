@@ -1,5 +1,12 @@
 # @polar-sh/adapter-core
 
+## 0.1.5
+
+### Patch Changes
+
+- 49d21c1: bump version
+- 234ba51: resolve core from workspace
+
 ## 0.1.3
 
 ### Patch Changes

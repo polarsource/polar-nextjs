@@ -1,5 +1,14 @@
 # @polar-sh/elysia
 
+## 0.1.7
+
+### Patch Changes
+
+- 234ba51: resolve core from workspace
+- Updated dependencies [49d21c1]
+- Updated dependencies [234ba51]
+  - @polar-sh/adapter-core@0.1.5
+
 ## 0.1.6
 
 ### Patch Changes
