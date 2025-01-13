@@ -1,5 +1,17 @@
 # @polar-sh/hono
 
+## 0.2.6
+
+### Patch Changes
+
+- aa6b311: init adapter-utils
+- abd0e90: fix utils
+- aa6b311: resolve core from workspace
+- Updated dependencies [aa6b311]
+- Updated dependencies [abd0e90]
+- Updated dependencies [aa6b311]
+  - @polar-sh/adapter-utils@0.1.1
+
 ## 0.2.5
 
 ### Patch Changes

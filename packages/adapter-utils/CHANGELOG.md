@@ -1,5 +1,13 @@
 # @polar-sh/adapter-utils
 
+## 0.1.1
+
+### Patch Changes
+
+- aa6b311: init adapter-utils
+- abd0e90: fix utils
+- aa6b311: resolve core from workspace
+
 ## 0.1.5
 
 ### Patch Changes

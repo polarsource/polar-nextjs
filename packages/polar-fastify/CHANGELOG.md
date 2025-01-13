@@ -1,5 +1,15 @@
 # @polar-sh/elysia
 
+## 0.1.6
+
+### Patch Changes
+
+- abd0e90: fix utils
+- Updated dependencies [aa6b311]
+- Updated dependencies [abd0e90]
+- Updated dependencies [aa6b311]
+  - @polar-sh/adapter-utils@0.1.1
+
 ## 0.1.5
 
 ### Patch Changes
