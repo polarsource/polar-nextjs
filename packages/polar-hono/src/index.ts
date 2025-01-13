@@ -144,7 +144,7 @@ export const Webhooks = ({
 			throw error;
 		}
 
-		handleWebhookPayload(webhookPayload, {
+		await handleWebhookPayload(webhookPayload, {
 			webhookSecret,
 			onPayload,
 			...eventHandlers,

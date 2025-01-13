@@ -40,7 +40,7 @@ export const Webhooks = ({
 			return;
 		}
 
-		handleWebhookPayload(webhookPayload, {
+		await handleWebhookPayload(webhookPayload, {
 			webhookSecret,
 			onPayload,
 			...eventHandlers,

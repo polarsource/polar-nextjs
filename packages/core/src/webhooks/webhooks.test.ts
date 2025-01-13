@@ -2,10 +2,10 @@ import { handleWebhookPayload } from "./webhooks";
 import { describe, expect, it, vi } from "vitest";
 
 describe("webhooks", () => {
-  it("should handle webhook payload", () => {
+  it("should handle webhook payload", async () => {
     const onPayload = vi.fn();
 
-    handleWebhookPayload({ type: "checkout.created", data: {} } as any, {
+    await handleWebhookPayload({ type: "checkout.created", data: {} } as any, {
       webhookSecret: "test",
       onPayload,
     });
@@ -16,10 +16,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with checkout created", () => {
+  it("should handle webhook payload with checkout created", async () => {
     const onCheckoutCreated = vi.fn();
 
-    handleWebhookPayload({ type: "checkout.created", data: {} } as any, {
+    await handleWebhookPayload({ type: "checkout.created", data: {} } as any, {
       webhookSecret: "test",
       onCheckoutCreated,
     });
@@ -29,10 +29,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with checkout updated", () => {
+  it("should handle webhook payload with checkout updated", async () => {
     const onCheckoutUpdated = vi.fn();
 
-    handleWebhookPayload({ type: "checkout.updated", data: {} } as any, {
+    await handleWebhookPayload({ type: "checkout.updated", data: {} } as any, {
       webhookSecret: "test",
       onCheckoutUpdated,
     });
@@ -42,10 +42,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with order created", () => {
+  it("should handle webhook payload with order created", async () => {
     const onOrderCreated = vi.fn();
 
-    handleWebhookPayload({ type: "order.created", data: {} } as any, {
+    await handleWebhookPayload({ type: "order.created", data: {} } as any, {
       webhookSecret: "test",
       onOrderCreated,
     });
@@ -55,10 +55,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with subscription created", () => {
+  it("should handle webhook payload with subscription created", async () => {
     const onSubscriptionCreated = vi.fn();
 
-    handleWebhookPayload({ type: "subscription.created", data: {} } as any, {
+    await handleWebhookPayload({ type: "subscription.created", data: {} } as any, {
       webhookSecret: "test",
       onSubscriptionCreated,
     });
@@ -68,10 +68,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with subscription updated", () => {
+  it("should handle webhook payload with subscription updated", async () => {
     const onSubscriptionUpdated = vi.fn();
 
-    handleWebhookPayload({ type: "subscription.updated", data: {} } as any, {
+    await handleWebhookPayload({ type: "subscription.updated", data: {} } as any, {
       webhookSecret: "test",
       onSubscriptionUpdated,
     });
@@ -81,10 +81,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with subscription active", () => {
+  it("should handle webhook payload with subscription active", async () => {
     const onSubscriptionActive = vi.fn();
 
-    handleWebhookPayload({ type: "subscription.active", data: {} } as any, {
+    await handleWebhookPayload({ type: "subscription.active", data: {} } as any, {
       webhookSecret: "test",
       onSubscriptionActive,
     });
@@ -94,10 +94,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with subscription canceled", () => {
+  it("should handle webhook payload with subscription canceled", async () => {
     const onSubscriptionCanceled = vi.fn();
 
-    handleWebhookPayload({ type: "subscription.canceled", data: {} } as any, {
+    await handleWebhookPayload({ type: "subscription.canceled", data: {} } as any, {
       webhookSecret: "test",
       onSubscriptionCanceled,
     });
@@ -107,10 +107,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with subscription revoked", () => {
+  it("should handle webhook payload with subscription revoked", async () => {
     const onSubscriptionRevoked = vi.fn();
 
-    handleWebhookPayload({ type: "subscription.revoked", data: {} } as any, {
+    await handleWebhookPayload({ type: "subscription.revoked", data: {} } as any, {
       webhookSecret: "test",
       onSubscriptionRevoked,
     });
@@ -120,10 +120,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with product created", () => {
+  it("should handle webhook payload with product created", async () => {
     const onProductCreated = vi.fn();
 
-    handleWebhookPayload({ type: "product.created", data: {} } as any, {
+    await handleWebhookPayload({ type: "product.created", data: {} } as any, {
       webhookSecret: "test",
       onProductCreated,
     });
@@ -133,10 +133,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with product updated", () => {
+  it("should handle webhook payload with product updated", async () => {
     const onProductUpdated = vi.fn();
 
-    handleWebhookPayload({ type: "product.updated", data: {} } as any, {
+    await handleWebhookPayload({ type: "product.updated", data: {} } as any, {
       webhookSecret: "test",
       onProductUpdated,
     });
@@ -146,10 +146,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with organization updated", () => {
+  it("should handle webhook payload with organization updated", async () => {
     const onOrganizationUpdated = vi.fn();
 
-    handleWebhookPayload({ type: "organization.updated", data: {} } as any, {
+    await handleWebhookPayload({ type: "organization.updated", data: {} } as any, {
       webhookSecret: "test",
       onOrganizationUpdated,
     });
@@ -159,10 +159,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with benefit created", () => {
+  it("should handle webhook payload with benefit created", async () => {
     const onBenefitCreated = vi.fn();
 
-    handleWebhookPayload({ type: "benefit.created", data: {} } as any, {
+    await handleWebhookPayload({ type: "benefit.created", data: {} } as any, {
       webhookSecret: "test",
       onBenefitCreated,
     });
@@ -172,10 +172,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with benefit updated", () => {
+  it("should handle webhook payload with benefit updated", async () => {
     const onBenefitUpdated = vi.fn();
 
-    handleWebhookPayload({ type: "benefit.updated", data: {} } as any, {
+    await handleWebhookPayload({ type: "benefit.updated", data: {} } as any, {
       webhookSecret: "test",
       onBenefitUpdated,
     });
@@ -185,10 +185,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with benefit grant created", () => {
+  it("should handle webhook payload with benefit grant created", async () => {
     const onBenefitGrantCreated = vi.fn();
 
-    handleWebhookPayload({ type: "benefit_grant.created", data: {} } as any, {
+    await handleWebhookPayload({ type: "benefit_grant.created", data: {} } as any, {
       webhookSecret: "test",
       onBenefitGrantCreated,
     });
@@ -198,10 +198,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with benefit grant updated", () => {
+  it("should handle webhook payload with benefit grant updated", async () => {
     const onBenefitGrantUpdated = vi.fn();
 
-    handleWebhookPayload({ type: "benefit_grant.updated", data: {} } as any, {
+    await handleWebhookPayload({ type: "benefit_grant.updated", data: {} } as any, {
       webhookSecret: "test",
       onBenefitGrantUpdated,
     });
@@ -211,10 +211,10 @@ describe("webhooks", () => {
     });
   });
 
-  it("should handle webhook payload with benefit grant revoked", () => {
+  it("should handle webhook payload with benefit grant revoked", async () => {
     const onBenefitGrantRevoked = vi.fn();
 
-    handleWebhookPayload({ type: "benefit_grant.revoked", data: {} } as any, {
+    await handleWebhookPayload({ type: "benefit_grant.revoked", data: {} } as any, {
       webhookSecret: "test",
       onBenefitGrantRevoked,
     });

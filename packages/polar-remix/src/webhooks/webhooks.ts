@@ -42,7 +42,7 @@ export const Webhooks = ({
 			return Response.json({ error: "Internal server error" }, { status: 500 });
 		}
 
-		handleWebhookPayload(webhookPayload, {
+		await handleWebhookPayload(webhookPayload, {
 			webhookSecret,
 			onPayload,
 			...eventHandlers,

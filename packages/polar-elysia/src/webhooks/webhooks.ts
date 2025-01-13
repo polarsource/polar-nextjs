@@ -39,7 +39,7 @@ export const Webhooks = ({
 			return ctx.error(500, { error: "Internal server error" });
 		}
 
-		handleWebhookPayload(webhookPayload, {
+		await handleWebhookPayload(webhookPayload, {
 			webhookSecret,
 			onPayload,
 			...eventHandlers,

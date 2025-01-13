@@ -61,56 +61,93 @@ export const handleWebhookPayload = async (
   payload: ReturnType<typeof validateEvent>,
   { webhookSecret, onPayload, ...eventHandlers }: WebhooksConfig,
 ) => {
-  onPayload?.(payload);
+  const promises: Promise<void>[] = [];
+
+  if (onPayload) {
+    promises.push(onPayload(payload));
+  }
 
   switch (payload.type) {
     case "checkout.created":
-      eventHandlers.onCheckoutCreated?.(payload);
+      if (eventHandlers.onCheckoutCreated) {
+        promises.push(eventHandlers.onCheckoutCreated(payload));
+      }
       break;
     case "checkout.updated":
-      eventHandlers.onCheckoutUpdated?.(payload);
+      if (eventHandlers.onCheckoutUpdated) {
+        promises.push(eventHandlers.onCheckoutUpdated(payload));
+      }
       break;
     case "order.created":
-      eventHandlers.onOrderCreated?.(payload);
+      if (eventHandlers.onOrderCreated) {
+        promises.push(eventHandlers.onOrderCreated(payload));
+      }
       break;
     case "subscription.created":
-      eventHandlers.onSubscriptionCreated?.(payload);
+      if (eventHandlers.onSubscriptionCreated) {
+        promises.push(eventHandlers.onSubscriptionCreated(payload));
+      }
       break;
     case "subscription.updated":
-      eventHandlers.onSubscriptionUpdated?.(payload);
+      if (eventHandlers.onSubscriptionUpdated) {
+        promises.push(eventHandlers.onSubscriptionUpdated(payload));
+      }
       break;
     case "subscription.active":
-      eventHandlers.onSubscriptionActive?.(payload);
+      if (eventHandlers.onSubscriptionActive) {
+        promises.push(eventHandlers.onSubscriptionActive(payload));
+      }
       break;
     case "subscription.canceled":
-      eventHandlers.onSubscriptionCanceled?.(payload);
+      if (eventHandlers.onSubscriptionCanceled) {
+        promises.push(eventHandlers.onSubscriptionCanceled(payload));
+      }
       break;
     case "subscription.revoked":
-      eventHandlers.onSubscriptionRevoked?.(payload);
+      if (eventHandlers.onSubscriptionRevoked) {
+        promises.push(eventHandlers.onSubscriptionRevoked(payload));
+      }
       break;
     case "product.created":
-      eventHandlers.onProductCreated?.(payload);
+      if (eventHandlers.onProductCreated) {
+        promises.push(eventHandlers.onProductCreated(payload));
+      }
       break;
     case "product.updated":
-      eventHandlers.onProductUpdated?.(payload);
+      if (eventHandlers.onProductUpdated) {
+        promises.push(eventHandlers.onProductUpdated(payload));
+      }
       break;
     case "organization.updated":
-      eventHandlers.onOrganizationUpdated?.(payload);
+      if (eventHandlers.onOrganizationUpdated) {
+        promises.push(eventHandlers.onOrganizationUpdated(payload));
+      }
       break;
     case "benefit.created":
-      eventHandlers.onBenefitCreated?.(payload);
+      if (eventHandlers.onBenefitCreated) {
+        promises.push(eventHandlers.onBenefitCreated(payload));
+      }
       break;
     case "benefit.updated":
-      eventHandlers.onBenefitUpdated?.(payload);
+      if (eventHandlers.onBenefitUpdated) {
+        promises.push(eventHandlers.onBenefitUpdated(payload));
+      }
       break;
     case "benefit_grant.created":
-      eventHandlers.onBenefitGrantCreated?.(payload);
+      if (eventHandlers.onBenefitGrantCreated) {
+        promises.push(eventHandlers.onBenefitGrantCreated(payload));
+      }
       break;
     case "benefit_grant.updated":
-      eventHandlers.onBenefitGrantUpdated?.(payload);
+      if (eventHandlers.onBenefitGrantUpdated) {
+        promises.push(eventHandlers.onBenefitGrantUpdated(payload));
+      }
       break;
     case "benefit_grant.revoked":
-      eventHandlers.onBenefitGrantRevoked?.(payload);
-      break;
+      if (eventHandlers.onBenefitGrantRevoked) {
+        promises.push(eventHandlers.onBenefitGrantRevoked(payload));
+      }
   }
+
+  return Promise.all(promises);
 };
