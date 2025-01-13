@@ -2,7 +2,7 @@
 
 Payments and Checkouts made dead simple with Fastify.
 
-`pnpm install @polar-sh/elysia zod`
+`pnpm install @polar-sh/fastify zod`
 
 ## Checkout
 
