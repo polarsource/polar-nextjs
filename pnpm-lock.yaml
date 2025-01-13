@@ -150,6 +150,9 @@ importers:
 
   packages/polar-fastify:
     dependencies:
+      '@polar-sh/adapter-utils':
+        specifier: workspace:*
+        version: link:../adapter-utils
       '@polar-sh/sdk':
         specifier: ^0.20.0
         version: 0.20.2(zod@3.24.1)

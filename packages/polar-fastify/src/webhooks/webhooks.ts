@@ -1,13 +1,9 @@
+import { handleWebhookPayload, WebhooksConfig } from "@polar-sh/adapter-utils";
 import {
 	WebhookVerificationError,
 	validateEvent,
 } from "@polar-sh/sdk/webhooks";
 import type { FastifyReply, FastifyRequest, RouteHandler } from "fastify";
-
-export interface WebhooksConfig {
-	webhookSecret: string;
-	onPayload: (payload: ReturnType<typeof validateEvent>) => Promise<void>;
-}
 
 export const Webhooks = ({
 	webhookSecret,
@@ -41,7 +37,7 @@ export const Webhooks = ({
 			return reply.status(500).send({ error: "Internal server error" });
 		}
 
-		await onPayload(webhookPayload);
+		await handleWebhookPayload(webhookPayload, { webhookSecret, onPayload });
 
 		return { received: true };
 	};
