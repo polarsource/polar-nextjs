@@ -7,6 +7,7 @@ This repository hosts a wide array of Polar adapters for your TypeScript framewo
 - [Next.js](./packages/polar-nextjs)
 - [Remix](./packages/polar-remix)
 - [Elysia](./packages/polar-elysia)
+- [Fastify](./packages/polar-fastify)
 - [Hono](./packages/polar-hono)
 - [Sveltekit](./packages/polar-sveltekit)
 - [Express](./packages/polar-express)
