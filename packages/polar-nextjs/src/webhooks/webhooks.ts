@@ -1,7 +1,7 @@
 import {
 	type WebhooksConfig,
 	handleWebhookPayload,
-} from "@polar-sh/adapter-core";
+} from "@polar-sh/adapter-utils";
 import {
 	WebhookVerificationError,
 	validateEvent,
@@ -37,7 +37,7 @@ export const Webhooks = ({
 			throw error;
 		}
 
-		await handleWebhookPayload(webhookPayload, {
+		handleWebhookPayload(webhookPayload, {
 			webhookSecret,
 			onPayload,
 			...eventHandlers,

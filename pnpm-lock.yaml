@@ -22,7 +22,7 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
 
-  packages/core:
+  packages/adapter-utils:
     dependencies:
       '@polar-sh/sdk':
         specifier: ^0.20.2
@@ -79,9 +79,9 @@ importers:
 
   packages/polar-elysia:
     dependencies:
-      '@polar-sh/adapter-core':
+      '@polar-sh/adapter-utils':
         specifier: workspace:*
-        version: link:../core
+        version: link:../adapter-utils
       '@polar-sh/sdk':
         specifier: ^0.20.2
         version: 0.20.2(zod@3.24.1)
@@ -110,9 +110,9 @@ importers:
 
   packages/polar-express:
     dependencies:
-      '@polar-sh/adapter-core':
+      '@polar-sh/adapter-utils':
         specifier: workspace:*
-        version: link:../core
+        version: link:../adapter-utils
       '@polar-sh/sdk':
         specifier: ^0.20.0
         version: 0.20.2(zod@3.24.1)
@@ -178,9 +178,9 @@ importers:
 
   packages/polar-hono:
     dependencies:
-      '@polar-sh/adapter-core':
+      '@polar-sh/adapter-utils':
         specifier: workspace:*
-        version: link:../core
+        version: link:../adapter-utils
       '@polar-sh/sdk':
         specifier: ^0.20.0
         version: 0.20.2(zod@3.24.1)
@@ -209,9 +209,9 @@ importers:
 
   packages/polar-nextjs:
     dependencies:
-      '@polar-sh/adapter-core':
+      '@polar-sh/adapter-utils':
         specifier: workspace:*
-        version: link:../core
+        version: link:../adapter-utils
       '@polar-sh/sdk':
         specifier: ^0.20.0
         version: 0.20.2(zod@3.24.1)
@@ -234,9 +234,9 @@ importers:
       '@nuxt/kit':
         specifier: ^3.10.0
         version: 3.15.1(magicast@0.3.5)(rollup@4.30.0)
-      '@polar-sh/adapter-core':
+      '@polar-sh/adapter-utils':
         specifier: workspace:*
-        version: link:../core
+        version: link:../adapter-utils
       '@polar-sh/sdk':
         specifier: ^0.20.0
         version: 0.20.2(zod@3.24.1)
@@ -259,9 +259,9 @@ importers:
 
   packages/polar-remix:
     dependencies:
-      '@polar-sh/adapter-core':
+      '@polar-sh/adapter-utils':
         specifier: workspace:*
-        version: link:../core
+        version: link:../adapter-utils
       '@polar-sh/sdk':
         specifier: ^0.20.0
         version: 0.20.2(zod@3.24.1)
@@ -287,9 +287,9 @@ importers:
 
   packages/polar-sveltekit:
     dependencies:
-      '@polar-sh/adapter-core':
+      '@polar-sh/adapter-utils':
         specifier: workspace:*
-        version: link:../core
+        version: link:../adapter-utils
       '@polar-sh/sdk':
         specifier: ^0.20.0
         version: 0.20.2(zod@3.24.1)

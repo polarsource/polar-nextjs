@@ -7,7 +7,7 @@ import type { RequestEvent } from "@sveltejs/kit";
 import {
   type WebhooksConfig,
   handleWebhookPayload,
-} from "@polar-sh/adapter-core";
+} from "@polar-sh/adapter-utils";
 export interface CheckoutConfig {
   accessToken?: string;
   successUrl?: string;

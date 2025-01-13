@@ -1,4 +1,4 @@
-# @polar-sh/adapter-core
+# @polar-sh/adapter-utils
 
 ## 0.1.5
 
