@@ -1,5 +1,11 @@
 # @polar-sh/nuxt
 
+## 0.1.8
+
+### Patch Changes
+
+- 8cdbaca: remove private field
+
 ## 0.1.7
 
 ### Patch Changes
