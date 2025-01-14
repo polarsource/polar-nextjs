@@ -1,5 +1,11 @@
 # @polar-sh/nuxt
 
+## 0.1.7
+
+### Patch Changes
+
+- 91abcc4: init nuxt
+
 ## 0.1.6
 
 ### Patch Changes
