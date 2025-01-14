@@ -1,5 +1,11 @@
 # @polar-sh/elysia
 
+## 0.1.7
+
+### Patch Changes
+
+- 2746035: Add productPriceId param capability
+
 ## 0.1.6
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @polar-sh/nuxt
 
+## 0.1.9
+
+### Patch Changes
+
+- 2746035: Add productPriceId param capability
+
 ## 0.1.8
 
 ### Patch Changes

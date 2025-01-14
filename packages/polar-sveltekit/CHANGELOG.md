@@ -1,5 +1,11 @@
 # @polar-sh/sveltekit
 
+## 0.3.7
+
+### Patch Changes
+
+- 2746035: Add productPriceId param capability
+
 ## 0.3.6
 
 ### Patch Changes

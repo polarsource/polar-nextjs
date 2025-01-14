@@ -1,5 +1,11 @@
 # @polar-sh/hono
 
+## 0.2.7
+
+### Patch Changes
+
+- 2746035: Add productPriceId param capability
+
 ## 0.2.6
 
 ### Patch Changes
