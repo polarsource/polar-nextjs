@@ -25,8 +25,8 @@ export const Checkout = ({
 			server,
 		});
 
-		const productId = url.searchParams.get("productId");
-		const productPriceId = url.searchParams.get("productPriceId");
+		const productId = url.searchParams.get("productId") ?? undefined;
+		const productPriceId = url.searchParams.get("productPriceId") ?? undefined;
 
 		if (!productId && !productPriceId) {
 			return Response.json(
@@ -43,8 +43,9 @@ export const Checkout = ({
 
 		try {
 			const result = await polar.checkouts.custom.create({
-				productId: productId ?? "",
-				productPriceId: productPriceId ?? "",
+				...(productId
+					? { productId }
+					: { productPriceId: productPriceId ?? "" }),
 				successUrl: success?.toString(),
 				customerId: url.searchParams.get("customerId") ?? undefined,
 				customerEmail: url.searchParams.get("customerEmail") ?? undefined,
