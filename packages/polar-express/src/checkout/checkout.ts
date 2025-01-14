@@ -25,9 +25,12 @@ export const Checkout = ({
 			`${req.protocol}://${req.get("host")}${req.originalUrl}`,
 		);
 		const productId = url.searchParams.get("productId");
+		const productPriceId = url.searchParams.get("productPriceId");
 
-		if (!productId) {
-			res.status(400).json({ error: "Missing productId in query params" });
+		if (!productId && !productPriceId) {
+			res.status(400).json({
+				error: "Missing productId or productPriceId in query params",
+			});
 			return;
 		}
 
@@ -39,7 +42,8 @@ export const Checkout = ({
 
 		try {
 			const result = await polar.checkouts.custom.create({
-				productId,
+				productId: productId ?? "",
+				productPriceId: productPriceId ?? "",
 				successUrl: success?.toString(),
 				customerId: url.searchParams.get("customerId") ?? undefined,
 				customerEmail: url.searchParams.get("customerEmail") ?? undefined,
